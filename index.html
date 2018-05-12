@@ -457,7 +457,7 @@
 		<div id="collapseDoctrine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="doctrineHeading">
 		    <div class="panel-body">
 		      <p class="lead">What doctrine does your organization make use of?</p>
-		      <p>Select cells to highlight them as you think, discuss, and challenge assumptions. In this section, you can click multiple times to progress through colors indicating a neutral, warning, weak, and good status.</p>
+		      <p>Select cells to highlight them as you think, discuss, and challenge assumptions. In this section, you can click multiple times to progress through colors indicating a neutral, weak, warning, and good status.</p>
 		      <p><em>Inspired by <a  href="https://twitter.com/swardley/status/993517588113186817">this tweetstorm</a> by Simon Wardley.</em></p>
 			<table class="table table-hover table-responsive table-rotated-markable">
 			    <thead>
@@ -569,16 +569,16 @@
             });
             $(".table-rotated-markable tbody td").on("click", function(e) {
                 if (!$(this).hasClass("heading")) {
-                    if($(this).hasClass("warning")) {
+                    if($(this).hasClass("danger")) {
+                        $(this).toggleClass("danger");
                         $(this).toggleClass("warning");
-                        $(this).toggleClass("danger");
-                    } else if($(this).hasClass("danger")) {
-                        $(this).toggleClass("danger");
+                    } else if($(this).hasClass("warning")) {
+                        $(this).toggleClass("warning");
                         $(this).toggleClass("success");
                     } else if($(this).hasClass("success")) {
                         $(this).toggleClass("success");
                     } else {
-                        $(this).toggleClass("warning");
+                        $(this).toggleClass("danger");
                     }
                 }
             });
