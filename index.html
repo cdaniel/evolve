@@ -569,10 +569,7 @@
             });
             $(".table-rotated-markable tbody td").on("click", function(e) {
                 if (!$(this).hasClass("heading")) {
-                    if($(this).hasClass("info")) {
-                        $(this).toggleClass("info");
-                        $(this).toggleClass("warning");
-                    } else if($(this).hasClass("warning")) {
+                    if($(this).hasClass("warning")) {
                         $(this).toggleClass("warning");
                         $(this).toggleClass("danger");
                     } else if($(this).hasClass("danger")) {
@@ -581,7 +578,7 @@
                     } else if($(this).hasClass("success")) {
                         $(this).toggleClass("success");
                     } else {
-                        $(this).toggleClass("info");
+                        $(this).toggleClass("warning");
                     }
                 }
             });
