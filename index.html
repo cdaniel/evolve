@@ -227,7 +227,7 @@
                 <div class="panel-heading" role="tab" id="simpleHeading">
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSimple" aria-expanded="true" aria-controls="collapseSimple">
-                        <span class="caret"></span> Cheat Sheet: Simple
+                        <span class="caret"></span> Evolutionary Characteristics Cheat Sheet: Simple
                         </a>
                     </h4>
                 </div>
@@ -302,7 +302,7 @@
                 <div class="panel-heading" role="tab" id="advancedHeading">
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAdvanced" aria-expanded="true" aria-controls="collapseAdvanced">
-                        <span class="caret"></span> Cheat Sheet: Advanced
+                        <span class="caret"></span> Evolutionary Characteristics Cheat Sheet: Advanced
                         </a>
                     </h4>
                 </div>
@@ -450,7 +450,7 @@
 		<div class="panel-heading" role="tab" id="doctrineHeading">
 		    <h4 class="panel-title">
 			<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDoctrine" aria-expanded="true" aria-controls="collapseDoctrine">
-			<span class="caret"></span> Advanced: Doctrine
+			<span class="caret"></span> Doctrine
 			</a>
 		    </h4>
 		</div>
@@ -459,7 +459,7 @@
 		      <p class="lead">What doctrine does your organization make use of?</p>
 		      <p>Select cells to highlight them as you think, discuss, and challenge assumptions. In this section, you can click multiple times to progress through colors indicating a neutral, warning, weak, and good status.</p>
 		      <p><em>Inspired by <a  href="https://twitter.com/swardley/status/993517588113186817">this tweetstorm</a> by Simon Wardley.</em></p>
-			<table class="table table-hover table-responsive table-markable">
+			<table class="table table-hover table-responsive table-rotated-markable">
 			    <thead>
 				<tr>
 				  <th class="active">Category</th>
@@ -564,7 +564,25 @@
         window.onload = function(){
             $(".table-markable tbody td").on("click", function(e) {
                 if (!$(this).hasClass("heading")) {
-                    $(this).toggleClass("info")
+                    $(this).toggleClass("info");
+                }
+            });
+            $(".table-rotated-markable tbody td").on("click", function(e) {
+                if (!$(this).hasClass("heading")) {
+                    if($(this).hasClass("info")) {
+                        $(this).toggleClass("info");
+                        $(this).toggleClass("warning");
+                    } else if($(this).hasClass("warning")) {
+                        $(this).toggleClass("warning");
+                        $(this).toggleClass("danger");
+                    } else if($(this).hasClass("danger")) {
+                        $(this).toggleClass("danger");
+                        $(this).toggleClass("success");
+                    } else if($(this).hasClass("success")) {
+                        $(this).toggleClass("success");
+                    } else {
+                        $(this).toggleClass("info");
+                    }
                 }
             });
         };
