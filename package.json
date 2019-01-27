@@ -1,0 +1,30 @@
+{
+  "name": "evolve",
+  "version": "0.1.0",
+  "description": "A Wardley Mapping microsite.",
+  "main": "index.js",
+  "dependencies": {
+    "mustache": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mustache bs4.json bs4.mustache > index-bs4.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiredThought/evolutionary-characteristics.git"
+  },
+  "keywords": [
+    "Wardley"
+  ],
+  "authors": [
+    "Ben Mosior",
+    "Tasshin Fogleman"
+  ],
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/HiredThought/evolutionary-characteristics/issues"
+  },
+  "homepage": "https://github.com/HiredThought/evolutionary-characteristics#readme"
+}
