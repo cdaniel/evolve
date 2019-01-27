@@ -19,8 +19,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npm run beautify && npm run render",
-        "beautify": "js-beautify -r --type html *.mustache && js-beautify -r --type js *.json",
-        "render": "mustache data/combined.json bs4.mustache > index-bs4.html",
+        "beautify": "js-beautify -r --type html --file *.mustache --file partials/*.mustache && js-beautify -r --type js *.json",
+        "render": "mustache -p partials/*.mustache data/combined.json bs4.mustache > index-bs4.html",
         "import": "node import.js",
         "watch": "npm-watch"
     },
