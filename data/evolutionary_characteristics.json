@@ -4,20 +4,20 @@
     "name": "Ubiquity",
     "genesis": "Rare",
     "custom": "Slowly increasing consumption",
-    "product(+rental)": "Rapidly increasing consumption",
-    "commodity(+utility)": "Widespread and stabilising"
+    "product_rental": "Rapidly increasing consumption",
+    "commodity_utility": "Widespread and stabilising"
   }, {
     "name": "Certainty",
     "genesis": "Poorly understood",
     "custom": "Rapid increases in learning",
-    "product(+rental)": "Rapid increases in use / fit for purpose",
-    "commodity(+utility)": "Commonly understood (in terms of use)"
+    "product_rental": "Rapid increases in use / fit for purpose",
+    "commodity_utility": "Commonly understood (in terms of use)"
   }, {
     "name": "Publication Types",
     "genesis": "Normally describe the wonder of the thing",
     "custom": "Build / construct / awareness and learning",
-    "product(+rental)": "Maintenance / operations / installation / features",
-    "commodity(+utility)": "Focused on use"
+    "product_rental": "Maintenance / operations / installation / features",
+    "commodity_utility": "Focused on use"
   }]
 }, {
   "category_name": "General Properties",
@@ -25,73 +25,73 @@
     "name": "Market",
     "genesis": "Undefined market",
     "custom": "Forming market",
-    "product(+rental)": "Growing market",
-    "commodity(+utility)": "Mature market"
+    "product_rental": "Growing market",
+    "commodity_utility": "Mature market"
   }, {
     "name": "Knowledge management",
     "genesis": "Uncertain",
     "custom": "Learning on use",
-    "product(+rental)": "Learning on operation",
-    "commodity(+utility)": "Known / accepted"
+    "product_rental": "Learning on operation",
+    "commodity_utility": "Known / accepted"
   }, {
     "name": "Market perception",
     "genesis": "Chaotic (non-linear)",
     "custom": "Domain of experts",
-    "product(+rental)": "Increasing expectations of use",
-    "commodity(+utility)": "Ordered (appearance of being linear) / trivial"
+    "product_rental": "Increasing expectations of use",
+    "commodity_utility": "Ordered (appearance of being linear) / trivial"
   }, {
     "name": "User perception",
     "genesis": "Different / confusing / exciting / surprising",
     "custom": "Leading edge / emerging",
-    "product(+rental)": "Common / disappointed if not used or available",
-    "commodity(+utility)": "Standard / expected"
+    "product_rental": "Common / disappointed if not used or available",
+    "commodity_utility": "Standard / expected"
   }, {
     "name": "Perception in industry",
     "genesis": "Competitive advantage / unpredictable / unknown",
     "custom": "Competitive advantage / ROI / case examples",
-    "product(+rental)": "Advantage through implementation / features",
-    "commodity(+utility)": "Cost of doing business / accepted"
+    "product_rental": "Advantage through implementation / features",
+    "commodity_utility": "Cost of doing business / accepted"
   }, {
     "name": "Focus of value",
     "genesis": "High future worth",
     "custom": "Seeking profit / ROI?",
-    "product(+rental)": "High profitability",
-    "commodity(+utility)": "High volume / reducing margin"
+    "product_rental": "High profitability",
+    "commodity_utility": "High volume / reducing margin"
   }, {
     "name": "Understanding",
     "genesis": "Poorly understood / unpredictable",
     "custom": "Increasing understanding / development of measures",
-    "product(+rental)": "Increasing education / constant refinement of needs / measures",
-    "commodity(+utility)": "Believed to be well defined / stable / measurable"
+    "product_rental": "Increasing education / constant refinement of needs / measures",
+    "commodity_utility": "Believed to be well defined / stable / measurable"
   }, {
     "name": "Comparison",
     "genesis": "Constantly changing / a differential / unstable",
     "custom": "Learning from others / testing the water / some evidential support",
-    "product(+rental)": "Feature difference",
-    "commodity(+utility)": "Essential / operational advantage"
+    "product_rental": "Feature difference",
+    "commodity_utility": "Essential / operational advantage"
   }, {
     "name": "Failure",
     "genesis": "High / tolerated / assumed",
     "custom": "Moderate / unsurprising but disappointed",
-    "product(+rental)": "Not tolerated, focus on constant improvement",
-    "commodity(+utility)": "Operational efficiency and surprised by failure"
+    "product_rental": "Not tolerated, focus on constant improvement",
+    "commodity_utility": "Operational efficiency and surprised by failure"
   }, {
     "name": "Market action",
     "genesis": "Gambling / driven by gut",
     "custom": "Exploring a \"found\" value",
-    "product(+rental)": "Market analysis / listening to customers",
-    "commodity(+utility)": "Metric driven / build what is needed"
+    "product_rental": "Market analysis / listening to customers",
+    "commodity_utility": "Metric driven / build what is needed"
   }, {
     "name": "Efficiency",
     "genesis": "Reducing the cost of change (experimentation)",
     "custom": "Reducing cost of waste (Learning)",
-    "product(+rental)": "Reducing cost of waste (Learning)",
-    "commodity(+utility)": "Reducing cost of deviation (Volume)"
+    "product_rental": "Reducing cost of waste (Learning)",
+    "commodity_utility": "Reducing cost of deviation (Volume)"
   }, {
     "name": "Decision drivers",
     "genesis": "Heritage / culture",
     "custom": "Analysis & synthesis",
-    "product(+rental)": "Analysis & synthesis",
-    "commodity(+utility)": "Previous experience"
+    "product_rental": "Analysis & synthesis",
+    "commodity_utility": "Previous experience"
   }]
 }]

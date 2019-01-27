@@ -19,13 +19,12 @@ var import_evolutionary_characteristics = function(data){
       if(index == -1){
         index = evolutionary_characteristics.push({category_name: element['category'], items: []}) - 1;
       }
-      console.log(index);
       evolutionary_characteristics[index]['items'].push({
         name: element['name'],
         genesis: element['genesis'],
         custom: element['custom'],
-        'product(+rental)': element['product(+rental)'],
-        'commodity(+utility)': element['commodity(+utility)']
+        product_rental: element['product(+rental)'],
+        commodity_utility: element['commodity(+utility)']
       });
     });
     data['evolutionary_characteristics'] = evolutionary_characteristics;
