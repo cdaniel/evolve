@@ -66,7 +66,7 @@ var import_climatic_patterns = function(data){
       var json = beautify(JSON.stringify(climatic_patterns), { indent_size: 2, space_in_empty_paren: true });
       fs.writeFileSync('data/climatic_patterns.json', json);
 
-      // // Next
+      // Next
       import_doctrine(data);
   })
   .catch(function(err) {
@@ -103,7 +103,43 @@ var import_doctrine = function(data){
       var json = beautify(JSON.stringify(doctrine), { indent_size: 2, space_in_empty_paren: true });
       fs.writeFileSync('data/doctrine.json', json);
 
-      // // Next
+      // Next
+      import_gameplay(data);
+  })
+  .catch(function(err) {
+      console.log(err.message);
+      console.log(err.stack);
+  });
+}
+
+// Gameplay
+var import_gameplay = function(data){
+  console.log('gameplay called!');
+  // console.log(data);
+  gsjson({
+    spreadsheetId: '1iUjZTCCv1KsgQ5VNohtU1c3BpW7pwh7N_FDgJimjHF8',
+    worksheet: 'Gameplay'
+  })
+  .then(function(result) {
+      // console.log(result.length);
+      // console.log(result);
+      var gameplay = [];
+      result.forEach(function(element){
+        index = gameplay.findIndex(function(subelement){ return subelement['category_name'] == element['category']});
+        if(index == -1){
+          index = gameplay.push({category_name: element['category'], items: []}) - 1;
+        }
+        gameplay[index]['items'].push({
+          name: element['name'],
+          chapter_described: element['chapterDescribed'],
+          description: element['description']
+        });
+      });
+      data['gameplay'] = gameplay;
+      var json = beautify(JSON.stringify(gameplay), { indent_size: 2, space_in_empty_paren: true });
+      fs.writeFileSync('data/gameplay.json', json);
+
+      // Next
       combine(data);
   })
   .catch(function(err) {

@@ -439,5 +439,283 @@
       "chapter_described": "A smorgasbord of the slightly useful",
       "description": "Understand that a company which plans for longevity needs to cope with not only the discovery of uncharted components but the use of the industrialised and the transition between these two extremes. You will need different attitudes. You will therefore create many cultures in your organisation e.g. pioneers, settlers and town planners have different cultures. This is not a negative and don’t try to grind everyone into a single bland culture. It will not make them happy."
     }]
+  }],
+  "gameplay": [{
+    "category_name": "Accelerators",
+    "items": [{
+      "name": "Open approaches",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "Whether source or data or practice, the act of making something open reduces barriers to adoption, encourages collaboration and accelerates the evolution of the component."
+    }, {
+      "name": "Co-operation",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Working with others. Sounds easy, actually it's not."
+    }, {
+      "name": "Exploiting network effects",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Techniques which increases the marginal value of something with increased number of users."
+    }, {
+      "name": "Industrial policy",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Government investment in a field."
+    }, {
+      "name": "Market enablement",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Encouraging the development of competition in a market"
+    }]
+  }, {
+    "category_name": "De-accelerators",
+    "items": [{
+      "name": "Exploiting constraint",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "Finding a constraint and reinforcing it through supply or demand manipulation. An existing constraint can be exploited to fragment a single player by increasing demand beyond their ability to supply (e.g. by creating a price war)."
+    }, {
+      "name": "IPR",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "Intellectual property rights (IPR) can be used to slow evolution by limiting competition even to the point of ring fencing a component making it difficult for others to evolve it further."
+    }, {
+      "name": "Creating constraints",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Supply chain manipulation with a view of creating a new constraint where none existed."
+    }]
+  }, {
+    "category_name": "Dealing with toxicity",
+    "items": [{
+      "name": "Pig in a poke",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "A mechanism of dressing up a liability as some form of future business before divesting to a third party."
+    }, {
+      "name": "Sweat and Dump",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "A mechanism of disposing of legacy liability onto a third party by exploiting their own inertia to change."
+    }, {
+      "name": "Disposal of liability",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Overcoming the internal inertia to disposal. Your own organisation is likely to fight you even when you're trying to get rid of the toxic."
+    }, {
+      "name": "Refactoring"
+    }]
+  }, {
+    "category_name": "Ecosystem",
+    "items": [{
+      "name": "Sensing Engines (ILC)",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "A mechanism of being the first mover to industrialise a component, allowing others (the ecosystem) to build new industries upon it and then using consumption data to determine future candidates for industrialisation."
+    }, {
+      "name": "Two factor markets",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "A mechanism of bringing providers and consumers together and exploiting network effects and aggregated data."
+    }, {
+      "name": "Alliances",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Creating two competing bodies to become the focus of competition and in effect driving oxygen out of a market."
+    }, {
+      "name": "Channel conflicts & disintermediation",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Exploiting new channels and conflict within existing channels to create favourable terms."
+    }, {
+      "name": "Co-creation",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Working with end users to drive evolution of a specific activity, practice or data set."
+    }, {
+      "name": "Co-opting and intercession",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Copying competitors move and undermining any ecosystem advantage by interrupting data flows."
+    }, {
+      "name": "Embrace and extend",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Capturing an existing ecosystem."
+    }, {
+      "name": "Tower and moat",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Dominating a future position and prevent future competitors from creating any differential."
+    }]
+  }, {
+    "category_name": "User Perception",
+    "items": [{
+      "name": "Fear, uncertainty and doubt",
+      "chapter_described": "A smorgasbord of the slightly useful",
+      "description": "Often used to slow evolution by exploiting inertia to change within customers and forcing new entrants to divert energy away from the components and into countering the accusations."
+    }, {
+      "name": "Artificial competition",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Creating two competing bodies to become the focus of competition and in effect driving oxygen out of a market."
+    }, {
+      "name": "Brand and marketing"
+    }, {
+      "name": "Bundling",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Hiding a disadvantageous change by bundling the change with other needs."
+    }, {
+      "name": "Confusion of choice",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Preventing users from making rational decisions by overwhelming them with choice."
+    }, {
+      "name": "Creating artificial needs",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Creating and elevating an artificial need through marketing and behavioural influence. Take a rock and make it a pet etc."
+    }, {
+      "name": "Education",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Overcoming user inertia to a change through education. There are 16 different forms of inertia and many can be overcome directly with education. Don't underestimate this."
+    }, {
+      "name": "Lobbying / counterplay",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Persuading Government of a favourable position."
+    }]
+  }, {
+    "category_name": "Attacking",
+    "items": [{
+      "name": "Centre of gravity",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Creating a focus of talent to encourage a market focus on your organisation."
+    }, {
+      "name": "Directed investment",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "VC approach to a specific or identified future change."
+    }, {
+      "name": "Experimentation",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Use of specialists groups, hackdays and other mechanisms of experimentation."
+    }, {
+      "name": "Fool's mate",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Using a constraint to force industrialisation of a higher order system."
+    }, {
+      "name": "Playing both sides",
+      "chapter_described": "TV Tropes",
+      "description": "In any war, there are those that will benefit from the fighting and destruction that it causes."
+    }, {
+      "name": "Press release process"
+    }, {
+      "name": "Undermining barriers to entry",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Identifying a barrier to entry into a market and reducing it to encourage competition."
+    }]
+  }, {
+    "category_name": "Competitor",
+    "items": [{
+      "name": "Ambush"
+    }, {
+      "name": "Circling and probing"
+    }, {
+      "name": "Fragmentation play",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Exploiting pricing effects, constraints and co-opting to fragment a competitor's market."
+    }, {
+      "name": "Misdirection",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Sending false signals to competitors or future competitors including investment focused on the wrong direction."
+    }, {
+      "name": "Reinforcing competitor inertia",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Identifying inertia within a competitor and forcing market changes that reinforce this."
+    }, {
+      "name": "Restriction of movement",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Limiting a competitors ability to adapt."
+    }, {
+      "name": "Sapping",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Opening up multiple fronts on a competitor to weaken their ability to react."
+    }, {
+      "name": "Talent raid",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Removing core talent from a competitor either directly or indirectly."
+    }]
+  }, {
+    "category_name": "Defensive",
+    "items": [{
+      "name": "Defensive regulation",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Using Government's to create protection for your market and slow down competitors."
+    }, {
+      "name": "Limitation of competition",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Through regulatory or other means including erecting barriers to prevent or limit competitors."
+    }, {
+      "name": "Managing inertia",
+      "chapter_described": "I wasn't expecting that",
+      "description": "Identify the forms of inertia you will face and how to counter them before charging straight on into the battle."
+    }, {
+      "name": "Procrastination",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Do nothing and allowing competition to drive a system to a more evolved form."
+    }, {
+      "name": "Raising barriers to entry",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Increasing expectations within a market for a range of user needs to be met in order to prevent others entering the market."
+    }, {
+      "name": "Threat acquisition",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Buying up those companies that may threaten your market."
+    }]
+  }, {
+    "category_name": "Markets",
+    "items": [{
+      "name": "Buyer / supplier power",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Creating a position of strength for yourself."
+    }, {
+      "name": "Differentiation",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Creating a visible difference through user needs."
+    }, {
+      "name": "Harvesting",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Allowing others to develop upon your offerings and harvesting those that are successful. Techniques for ensuring harvesting creates positive signals rather than creating an environment others avoid."
+    }, {
+      "name": "Last man standing",
+      "chapter_described": "Amazon and the last man standing",
+      "description": "In the last few years of the model when the price is dropping then it is all about last man standing. Many competitors won't be in a position to cope with how low the prices will go. The economies of scale will start to really tell here. Many will fall and it won't be gentle and graceful like. It'll be more brick like as in brick fired from a howitzer pointing downwards on the top of a building."
+    }, {
+      "name": "Pricing policy",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Exploiting supply and demand effects including price elasticity, Jevons paradox and constraints including fragmentation plays."
+    }, {
+      "name": "Signal distortion",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Exploiting commonly used signals in the market by manipulation of analysts to create a perception of change."
+    }, {
+      "name": "Standards game",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Driving a market to a standard to create a cost of transition for others or remove the ability of others to differentiate."
+    }, {
+      "name": "Trading"
+    }]
+  }, {
+    "category_name": "Poison",
+    "items": [{
+      "name": "Designed to fail",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Removing potential future threats by poisoning a market space before anyone attempts to establish it."
+    }, {
+      "name": "Insertion",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Either through talent or misdirection, encouraging false moves in a competitor."
+    }, {
+      "name": "Licensing play",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Use of licensing to prevent future competitor moves."
+    }]
+  }, {
+    "category_name": "Positional",
+    "items": [{
+      "name": "Fast follower",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Exploiting fast follower advantage into uncharted spaces."
+    }, {
+      "name": "First mover",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Exploiting first mover advantage especially with industrialisation to component services."
+    }, {
+      "name": "Land grab",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Identifying and position a company to capture a future market space."
+    }, {
+      "name": "Weak signal / horizon",
+      "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
+      "description": "Use of common economic patterns to identify where and when to attack."
+    }]
   }]
 }
