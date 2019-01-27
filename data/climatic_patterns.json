@@ -1,5 +1,6 @@
-{
-  "Competitors": [{
+[{
+  "name": "Competitors",
+  "items": [{
     "name": "Competitors actions will change the game",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "Climatic patterns are ones that depend upon aggregated market effects e.g. evolution through supply & demand competition. This means that you cannot stop them without preventing competition in the market and the existence of competitors will cause them to happen."
@@ -7,8 +8,10 @@
     "name": "Most competitors have poor situational awareness",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "Competitor actions are an important part of anticipation. In general however this is not something that you can directly control or even anticipate beyond aggregated effects. Fortunately in today’s climate then most competitors act as blind players in which case you do not need to dwell too much on their actions. When you make a move, they are unlikely to understand why or counter you. In the near future, given the potential interest in business algorithms, they maybe even become anticipatable blind automatons following coded secrets of success. In much the same way that Dan Mirvish noted that when Anne Hathaway was in the news, Warren Buffett’s Berkshire Hathaway’s shares went up due to suspected sentiment analysis run by robotic trading platforms. This could make the game even easier."
-  }],
-  "Components": [{
+  }]
+}, {
+  "name": "Components",
+  "items": [{
     "name": "Everything evolves through supply and demand competition",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "If the conditions exist that a person or groups of people will strive to gain some form of advantage or control over others due to a constraint (i.e. a limitation of a resource or time or money or people) then we have competition. If competition exists then the components effected will evolve until they become industrialised. This impacts everything from activities (what we do), practices (how we do something), data (how we measure something) to knowledge (how we understand something). The map is never static but dynamic. It’s also important to understand that if competition exists then you will be in conflict with others. Sometimes the best way of resolving this is through coopetition (i.e. cooperative competition) and building alliances. In other cases, depending upon the context, then you have to fight even to the point of a game of last man standing. In any significant landscape then you’re likely to find yourself building alliances on one part of the map whilst at the same time fighting other companies in another and withdrawing from a third. However as the components on your map evolve then your former allies can become foes and vice versa. Microsoft and open source used to be mortal enemies, they’re now often found to be best buddies. To manage such a dynamic and fluid environment then you’re going to need to be able to observe it."
@@ -36,8 +39,10 @@
     "name": "Components can co-evolve",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "All components can evolve whether activities, practices, data or knowledge but they can also co-evolve. This is commonly seen with the co-evolution of practice (how we do something) with the evolution of an activity (what we do) especially as we shift from products to more industrialised forms. What causes this is the change of characteristics of the activity. DevOps is one such example of co-evolution."
-  }],
-  "Financial": [{
+  }]
+}, {
+  "name": "Financial",
+  "items": [{
     "name": "Higher order systems create new sources of value",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "It is the genesis of new components, enabling new user needs that creates future sources of differential value. I specifically state “enabling” because in many cases the users are unaware of the future needs they might have."
@@ -61,8 +66,10 @@
     "name": "Creative Destruction",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "The combination of inertia, a punctuated equilibrium, the red queen and co-evolution of practice means that as we shift across a boundary e.g. product to utility then we tend to get rapid destruction of the past (from business models to practice) along with creation of the new (industry and practices). This was described as creative destruction by Joseph Schumpeter."
-  }],
-  "Inertia": [{
+  }]
+}, {
+  "name": "Inertia",
+  "items": [{
     "name": "Success breeds inertia",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "Any past success with a component will tend to create resistance to changing that component. There are many different forms of inertia."
@@ -74,8 +81,10 @@
     "name": "Inertia can kill an organisation",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "Contrary to popular belief, it’s not a lack of innovation that harmed companies such as Blockbuster and Kodak but instead inertia to change created by past success. Both these companies helped develop the future industries but suffered at the hands of their past business models."
-  }],
-  "Prediction": [{
+  }]
+}, {
+  "name": "Prediction",
+  "items": [{
     "name": "You cannot measure evolution over time or adoption",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "The only consistent mechanism I’ve found for measuring evolution is ubiquity and certainty i.e. how well understood, complete and / or fit something is for the environment."
@@ -99,8 +108,10 @@
     "name": "A “war” (point of industrialisation) causes organisations to evolve",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "The industrialisation of an act will tend to cause co-evolution of practice and changes to how organisations operate. If the component is significant then this can lead to a new form of organisation."
-  }],
-  "Speed": [{
+  }]
+}, {
+  "name": "Speed",
+  "items": [{
     "name": "Efficiency enables innovation",
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "Genesis begets evolution begets genesis. The industrialisation of one component enables novel higher order systems to emerge through componentisation effects. But it also enables new features for existing products to appear or even the evolution of other components. The industrialisation of mass communication to a standardised utility such as the internet enabled the industrialisation of computing to a utility. I use the word innovation to describe all those changes from the genesis of a new act, feature differentiation of an existing act or a change of business model (e.g. shift from product to utility). The evolution of one component and its efficient provision enables innovation of others."
@@ -117,4 +128,4 @@
     "chapter_described": "A smorgasbord of the slightly useful",
     "description": "The shift across a boundary e.g. from custom to product or from product to commodity tend to visibly exhibit rapid exponential change and a shift from the past. This is known as a punctuated equilibrium."
   }]
-}
+}]

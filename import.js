@@ -12,12 +12,14 @@ var import_evolutionary_characteristics = function(data){
   .then(function(result) {
     // console.log(result.length);
     // console.log(result);
-    var evolutionary_characteristics = {};
+    var evolutionary_characteristics = [];
     result.forEach(function(element){
-      if(!(element['category'] in evolutionary_characteristics)) {
-        evolutionary_characteristics[element['category']] = [];
+
+      index = evolutionary_characteristics.findIndex(function(subelement){ return subelement['name'] == element['category']});
+      if(index == -1){
+        index = evolutionary_characteristics.push({name: element['category'], items: []}) - 1;
       }
-      evolutionary_characteristics[element['category']].push({
+      evolutionary_characteristics[index]['items'].push({
         name: element['name'],
         genesis: element['genesis'],
         custom: element['custom'],
@@ -28,7 +30,6 @@ var import_evolutionary_characteristics = function(data){
     data['evolutionary_characteristics'] = evolutionary_characteristics;
     var json = beautify(JSON.stringify(evolutionary_characteristics), { indent_size: 2, space_in_empty_paren: true });
     fs.writeFileSync('data/evolutionary_characteristics.json', json);
-
     // Next
     import_climatic_patterns(data);
   })
@@ -41,7 +42,7 @@ var import_evolutionary_characteristics = function(data){
 // Climatic Patterns
 var import_climatic_patterns = function(data){
   console.log('climatic patterns called!');
-  console.log(data);
+  // console.log(data);
   gsjson({
     spreadsheetId: '1iUjZTCCv1KsgQ5VNohtU1c3BpW7pwh7N_FDgJimjHF8',
     worksheet: 'Climatic Patterns'
@@ -49,12 +50,13 @@ var import_climatic_patterns = function(data){
   .then(function(result) {
       // console.log(result.length);
       // console.log(result);
-      var climatic_patterns = {};
+      var climatic_patterns = [];
       result.forEach(function(element){
-        if(!(element['category'] in climatic_patterns)) {
-          climatic_patterns[element['category']] = [];
+        index = climatic_patterns.findIndex(function(subelement){ return subelement['name'] == element['category']});
+        if(index == -1){
+          index = climatic_patterns.push({name: element['category'], items: []}) - 1;
         }
-        climatic_patterns[element['category']].push({
+        climatic_patterns[index]['items'].push({
           name: element['name'],
           chapter_described: element['chapterDescribed'],
           description: element['description']
@@ -64,7 +66,7 @@ var import_climatic_patterns = function(data){
       var json = beautify(JSON.stringify(climatic_patterns), { indent_size: 2, space_in_empty_paren: true });
       fs.writeFileSync('data/climatic_patterns.json', json);
 
-      // Next
+      // // Next
       combine(data);
   })
   .catch(function(err) {
@@ -75,8 +77,7 @@ var import_climatic_patterns = function(data){
 
 var combine = function(data) {
   console.log('combine called!');
-  console.log(data);
-  var json = beautify(JSON.stringify(data));
+  var json = beautify(JSON.stringify(data), { indent_size: 2, space_in_empty_paren: true });
   fs.writeFileSync('data/combined.json', json);
 }
 

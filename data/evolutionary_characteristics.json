@@ -1,5 +1,6 @@
-{
-  "Characteristics": [{
+[{
+  "name": "Characteristics",
+  "items": [{
     "name": "Ubiquity",
     "genesis": "Rare",
     "custom": "Slowly increasing consumption",
@@ -17,8 +18,10 @@
     "custom": "Build / construct / awareness and learning",
     "product(+rental)": "Maintenance / operations / installation / features",
     "commodity(+utility)": "Focused on use"
-  }],
-  "General Properties": [{
+  }]
+}, {
+  "name": "General Properties",
+  "items": [{
     "name": "Market",
     "genesis": "Undefined market",
     "custom": "Forming market",
@@ -91,4 +94,4 @@
     "product(+rental)": "Analysis & synthesis",
     "commodity(+utility)": "Previous experience"
   }]
-}
+}]
