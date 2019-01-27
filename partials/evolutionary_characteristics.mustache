@@ -1,30 +1,32 @@
-<div class="container-fluid">
-    <h4 class="mt-4">Evolutionary Characteristics Cheat Sheet</h4>
-    <table class="table table-hover">
-        <thead>
+<h1>The Evolutionary Characteristics Cheat Sheet</h1>
+<blockquote class="blockquote">
+    <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
+    <footer class="blockquote-footer">Simon Wardley in <cite title="Finding a Path"><a href="https://medium.com/wardleymaps/finding-a-path-cdb1249078c0" target="_blank">Finding a Path</a></cite></footer>
+</blockquote>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Stages of Evolution</th>
+            <th scope="col">Genesis</th>
+            <th scope="col">Custom</th>
+            <th scope="col">Product (+rental)</th>
+            <th scope="col">Commodity (+utility)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#evolutionary_characteristics}}
             <tr>
-                <th scope="col">Stages of Evolution</th>
-                <th scope="col">Genesis</th>
-                <th scope="col">Custom</th>
-                <th scope="col">Product (+rental)</th>
-                <th scope="col">Commodity (+utility)</th>
+                <th scope="row" colspan="5">{{category_name}}</th>
             </tr>
-        </thead>
-        <tbody>
-            {{#evolutionary_characteristics}}
+            {{#items}}
                 <tr>
-                    <th scope="row" colspan="5">{{category_name}}</th>
+                    <td scope="row"><em>{{name}}</em></td>
+                    <td>{{genesis}}</td>
+                    <td>{{custom}}</td>
+                    <td>{{product_rental}}</td>
+                    <td>{{commodity_utility}}</td>
                 </tr>
-                {{#items}}
-                    <tr>
-                        <td scope="row"><em>{{name}}</em></td>
-                        <td>{{genesis}}</td>
-                        <td>{{custom}}</td>
-                        <td>{{product_rental}}</td>
-                        <td>{{commodity_utility}}</td>
-                    </tr>
-                {{/items}}
-            {{/evolutionary_characteristics}}
-        </tbody>
-    </table>
-</div>
+            {{/items}}
+        {{/evolutionary_characteristics}}
+    </tbody>
+</table>

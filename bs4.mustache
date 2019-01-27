@@ -8,43 +8,69 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Evolve</title>
+    <title>evolve</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <h1 class="display-4">Evolve</h1>
-    </div>
-
-    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#evolution" role="tab" aria-controls="evolution" aria-selected="true">Evolution</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="climatic-patterns-tab" data-toggle="tab" href="#climatic-patterns" role="tab" aria-controls="climatic-patterns" aria-selected="false">Climatic Patterns</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="doctrine-tab" data-toggle="tab" href="#doctrine" role="tab" aria-controls="doctrine" aria-selected="false">Doctrine</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="gameplay-tab" data-toggle="tab" href="#gameplay" role="tab" aria-controls="gameplay" aria-selected="false">Gameplay</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="glossary-tab" data-toggle="tab" href="#glossary" role="tab" aria-controls="glossary" aria-selected="false">Glossary</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="evolution" role="tabpanel" aria-labelledby="evolution-tab">
-            {{> evolutionary_characteristics}}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">evolve</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://bit.ly/WardleyMappingBook">learn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/HiredThought/evolutionary-characteristics">contribute</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                operated by <a target="blank" href="https://hiredthought.com">Hired Thought</a>
+            </span>
         </div>
-        <div class="tab-pane fade" id="climatic-patterns" role="tabpanel" aria-labelledby="climatic-patterns-tab">...</div>
-        <div class="tab-pane fade" id="doctrine" role="tabpanel" aria-labelledby="doctrine-tab">...</div>
-        <div class="tab-pane fade" id="gameplay" role="tabpanel" aria-labelledby="gameplay-tab">...</div>
-        <div class="tab-pane fade" id="glossary" role="tabpanel" aria-labelledby="glossary-tab">...</div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-3 mb-4">
+            <div class="col-12 col-sm-3 col-lg-2">
+                <ul class="nav flex-column nav-pills" id="myTab" role="tablist" aria-orientation="vertical">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="introduction-tab" data-toggle="tab" href="#introduction" role="tab" aria-controls="introduction" aria-selected="true">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="evolution-tab" data-toggle="tab" href="#evolution" role="tab" aria-controls="evolution" aria-selected="true">Evolution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="climatic-patterns-tab" data-toggle="tab" href="#climatic-patterns" role="tab" aria-controls="climatic-patterns" aria-selected="false">Climate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="doctrine-tab" data-toggle="tab" href="#doctrine" role="tab" aria-controls="doctrine" aria-selected="false">Doctrine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="gameplay-tab" data-toggle="tab" href="#gameplay" role="tab" aria-controls="gameplay" aria-selected="false">Gameplay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="glossary-tab" data-toggle="tab" href="#glossary" role="tab" aria-controls="glossary" aria-selected="false">Glossary</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-9 col-lg-10">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+                        {{> introduction}}
+                    </div>
+                    <div class="tab-pane fade" id="evolution" role="tabpanel" aria-labelledby="evolution-tab">
+                        {{> evolutionary_characteristics}}
+                    </div>
+                    <div class="tab-pane fade" id="climatic-patterns" role="tabpanel" aria-labelledby="climatic-patterns-tab">...</div>
+                    <div class="tab-pane fade" id="doctrine" role="tabpanel" aria-labelledby="doctrine-tab">...</div>
+                    <div class="tab-pane fade" id="gameplay" role="tabpanel" aria-labelledby="gameplay-tab">...</div>
+                    <div class="tab-pane fade" id="glossary" role="tabpanel" aria-labelledby="glossary-tab">...</div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

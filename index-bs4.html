@@ -8,168 +8,197 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Evolve</title>
+    <title>evolve</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">evolve</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://bit.ly/WardleyMappingBook">learn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/HiredThought/evolutionary-characteristics">contribute</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                operated by <a target="blank" href="https://hiredthought.com">Hired Thought</a>
+            </span>
+        </div>
+    </nav>
     <div class="container-fluid">
-        <h1 class="display-4">Evolve</h1>
-    </div>
-
-    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#evolution" role="tab" aria-controls="evolution" aria-selected="true">Evolution</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="climatic-patterns-tab" data-toggle="tab" href="#climatic-patterns" role="tab" aria-controls="climatic-patterns" aria-selected="false">Climatic Patterns</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="doctrine-tab" data-toggle="tab" href="#doctrine" role="tab" aria-controls="doctrine" aria-selected="false">Doctrine</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="gameplay-tab" data-toggle="tab" href="#gameplay" role="tab" aria-controls="gameplay" aria-selected="false">Gameplay</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="glossary-tab" data-toggle="tab" href="#glossary" role="tab" aria-controls="glossary" aria-selected="false">Glossary</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="evolution" role="tabpanel" aria-labelledby="evolution-tab">
-<div class="container-fluid">
-    <h4 class="mt-4">Evolutionary Characteristics Cheat Sheet</h4>
-    <table class="table table-hover">
-        <thead>
+        <div class="row mt-3 mb-4">
+            <div class="col-12 col-sm-3 col-lg-2">
+                <ul class="nav flex-column nav-pills" id="myTab" role="tablist" aria-orientation="vertical">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="introduction-tab" data-toggle="tab" href="#introduction" role="tab" aria-controls="introduction" aria-selected="true">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="evolution-tab" data-toggle="tab" href="#evolution" role="tab" aria-controls="evolution" aria-selected="true">Evolution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="climatic-patterns-tab" data-toggle="tab" href="#climatic-patterns" role="tab" aria-controls="climatic-patterns" aria-selected="false">Climate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="doctrine-tab" data-toggle="tab" href="#doctrine" role="tab" aria-controls="doctrine" aria-selected="false">Doctrine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="gameplay-tab" data-toggle="tab" href="#gameplay" role="tab" aria-controls="gameplay" aria-selected="false">Gameplay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="glossary-tab" data-toggle="tab" href="#glossary" role="tab" aria-controls="glossary" aria-selected="false">Glossary</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-9 col-lg-10">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+<h1>Wardley Mapping</h1>
+<p class="lead">A visual method for exploring, understanding, and communicating strategy.</p>
+<p>Licensed <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative Commons Attribution-ShareAlike 4.0</a>, courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>.</p>                    </div>
+                    <div class="tab-pane fade" id="evolution" role="tabpanel" aria-labelledby="evolution-tab">
+<h1>The Evolutionary Characteristics Cheat Sheet</h1>
+<blockquote class="blockquote">
+    <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
+    <footer class="blockquote-footer">Simon Wardley in <cite title="Finding a Path"><a href="https://medium.com/wardleymaps/finding-a-path-cdb1249078c0" target="_blank">Finding a Path</a></cite></footer>
+</blockquote>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Stages of Evolution</th>
+            <th scope="col">Genesis</th>
+            <th scope="col">Custom</th>
+            <th scope="col">Product (+rental)</th>
+            <th scope="col">Commodity (+utility)</th>
+        </tr>
+    </thead>
+    <tbody>
             <tr>
-                <th scope="col">Stages of Evolution</th>
-                <th scope="col">Genesis</th>
-                <th scope="col">Custom</th>
-                <th scope="col">Product (+rental)</th>
-                <th scope="col">Commodity (+utility)</th>
+                <th scope="row" colspan="5">Characteristics</th>
             </tr>
-        </thead>
-        <tbody>
                 <tr>
-                    <th scope="row" colspan="5">Characteristics</th>
+                    <td scope="row"><em>Ubiquity</em></td>
+                    <td>Rare</td>
+                    <td>Slowly increasing consumption</td>
+                    <td>Rapidly increasing consumption</td>
+                    <td>Widespread and stabilising</td>
                 </tr>
-                    <tr>
-                        <td scope="row"><em>Ubiquity</em></td>
-                        <td>Rare</td>
-                        <td>Slowly increasing consumption</td>
-                        <td>Rapidly increasing consumption</td>
-                        <td>Widespread and stabilising</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Certainty</em></td>
-                        <td>Poorly understood</td>
-                        <td>Rapid increases in learning</td>
-                        <td>Rapid increases in use &#x2F; fit for purpose</td>
-                        <td>Commonly understood (in terms of use)</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Publication Types</em></td>
-                        <td>Normally describe the wonder of the thing</td>
-                        <td>Build &#x2F; construct &#x2F; awareness and learning</td>
-                        <td>Maintenance &#x2F; operations &#x2F; installation &#x2F; features</td>
-                        <td>Focused on use</td>
-                    </tr>
                 <tr>
-                    <th scope="row" colspan="5">General Properties</th>
+                    <td scope="row"><em>Certainty</em></td>
+                    <td>Poorly understood</td>
+                    <td>Rapid increases in learning</td>
+                    <td>Rapid increases in use &#x2F; fit for purpose</td>
+                    <td>Commonly understood (in terms of use)</td>
                 </tr>
-                    <tr>
-                        <td scope="row"><em>Market</em></td>
-                        <td>Undefined market</td>
-                        <td>Forming market</td>
-                        <td>Growing market</td>
-                        <td>Mature market</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Knowledge management</em></td>
-                        <td>Uncertain</td>
-                        <td>Learning on use</td>
-                        <td>Learning on operation</td>
-                        <td>Known &#x2F; accepted</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Market perception</em></td>
-                        <td>Chaotic (non-linear)</td>
-                        <td>Domain of experts</td>
-                        <td>Increasing expectations of use</td>
-                        <td>Ordered (appearance of being linear) &#x2F; trivial</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>User perception</em></td>
-                        <td>Different &#x2F; confusing &#x2F; exciting &#x2F; surprising</td>
-                        <td>Leading edge &#x2F; emerging</td>
-                        <td>Common &#x2F; disappointed if not used or available</td>
-                        <td>Standard &#x2F; expected</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Perception in industry</em></td>
-                        <td>Competitive advantage &#x2F; unpredictable &#x2F; unknown</td>
-                        <td>Competitive advantage &#x2F; ROI &#x2F; case examples</td>
-                        <td>Advantage through implementation &#x2F; features</td>
-                        <td>Cost of doing business &#x2F; accepted</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Focus of value</em></td>
-                        <td>High future worth</td>
-                        <td>Seeking profit &#x2F; ROI?</td>
-                        <td>High profitability</td>
-                        <td>High volume &#x2F; reducing margin</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Understanding</em></td>
-                        <td>Poorly understood &#x2F; unpredictable</td>
-                        <td>Increasing understanding &#x2F; development of measures</td>
-                        <td>Increasing education &#x2F; constant refinement of needs &#x2F; measures</td>
-                        <td>Believed to be well defined &#x2F; stable &#x2F; measurable</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Comparison</em></td>
-                        <td>Constantly changing &#x2F; a differential &#x2F; unstable</td>
-                        <td>Learning from others &#x2F; testing the water &#x2F; some evidential support</td>
-                        <td>Feature difference</td>
-                        <td>Essential &#x2F; operational advantage</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Failure</em></td>
-                        <td>High &#x2F; tolerated &#x2F; assumed</td>
-                        <td>Moderate &#x2F; unsurprising but disappointed</td>
-                        <td>Not tolerated, focus on constant improvement</td>
-                        <td>Operational efficiency and surprised by failure</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Market action</em></td>
-                        <td>Gambling &#x2F; driven by gut</td>
-                        <td>Exploring a &quot;found&quot; value</td>
-                        <td>Market analysis &#x2F; listening to customers</td>
-                        <td>Metric driven &#x2F; build what is needed</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Efficiency</em></td>
-                        <td>Reducing the cost of change (experimentation)</td>
-                        <td>Reducing cost of waste (Learning)</td>
-                        <td>Reducing cost of waste (Learning)</td>
-                        <td>Reducing cost of deviation (Volume)</td>
-                    </tr>
-                    <tr>
-                        <td scope="row"><em>Decision drivers</em></td>
-                        <td>Heritage &#x2F; culture</td>
-                        <td>Analysis &amp; synthesis</td>
-                        <td>Analysis &amp; synthesis</td>
-                        <td>Previous experience</td>
-                    </tr>
-        </tbody>
-    </table>
-</div>        </div>
-        <div class="tab-pane fade" id="climatic-patterns" role="tabpanel" aria-labelledby="climatic-patterns-tab">...</div>
-        <div class="tab-pane fade" id="doctrine" role="tabpanel" aria-labelledby="doctrine-tab">...</div>
-        <div class="tab-pane fade" id="gameplay" role="tabpanel" aria-labelledby="gameplay-tab">...</div>
-        <div class="tab-pane fade" id="glossary" role="tabpanel" aria-labelledby="glossary-tab">...</div>
+                <tr>
+                    <td scope="row"><em>Publication Types</em></td>
+                    <td>Normally describe the wonder of the thing</td>
+                    <td>Build &#x2F; construct &#x2F; awareness and learning</td>
+                    <td>Maintenance &#x2F; operations &#x2F; installation &#x2F; features</td>
+                    <td>Focused on use</td>
+                </tr>
+            <tr>
+                <th scope="row" colspan="5">General Properties</th>
+            </tr>
+                <tr>
+                    <td scope="row"><em>Market</em></td>
+                    <td>Undefined market</td>
+                    <td>Forming market</td>
+                    <td>Growing market</td>
+                    <td>Mature market</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Knowledge management</em></td>
+                    <td>Uncertain</td>
+                    <td>Learning on use</td>
+                    <td>Learning on operation</td>
+                    <td>Known &#x2F; accepted</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Market perception</em></td>
+                    <td>Chaotic (non-linear)</td>
+                    <td>Domain of experts</td>
+                    <td>Increasing expectations of use</td>
+                    <td>Ordered (appearance of being linear) &#x2F; trivial</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>User perception</em></td>
+                    <td>Different &#x2F; confusing &#x2F; exciting &#x2F; surprising</td>
+                    <td>Leading edge &#x2F; emerging</td>
+                    <td>Common &#x2F; disappointed if not used or available</td>
+                    <td>Standard &#x2F; expected</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Perception in industry</em></td>
+                    <td>Competitive advantage &#x2F; unpredictable &#x2F; unknown</td>
+                    <td>Competitive advantage &#x2F; ROI &#x2F; case examples</td>
+                    <td>Advantage through implementation &#x2F; features</td>
+                    <td>Cost of doing business &#x2F; accepted</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Focus of value</em></td>
+                    <td>High future worth</td>
+                    <td>Seeking profit &#x2F; ROI?</td>
+                    <td>High profitability</td>
+                    <td>High volume &#x2F; reducing margin</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Understanding</em></td>
+                    <td>Poorly understood &#x2F; unpredictable</td>
+                    <td>Increasing understanding &#x2F; development of measures</td>
+                    <td>Increasing education &#x2F; constant refinement of needs &#x2F; measures</td>
+                    <td>Believed to be well defined &#x2F; stable &#x2F; measurable</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Comparison</em></td>
+                    <td>Constantly changing &#x2F; a differential &#x2F; unstable</td>
+                    <td>Learning from others &#x2F; testing the water &#x2F; some evidential support</td>
+                    <td>Feature difference</td>
+                    <td>Essential &#x2F; operational advantage</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Failure</em></td>
+                    <td>High &#x2F; tolerated &#x2F; assumed</td>
+                    <td>Moderate &#x2F; unsurprising but disappointed</td>
+                    <td>Not tolerated, focus on constant improvement</td>
+                    <td>Operational efficiency and surprised by failure</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Market action</em></td>
+                    <td>Gambling &#x2F; driven by gut</td>
+                    <td>Exploring a &quot;found&quot; value</td>
+                    <td>Market analysis &#x2F; listening to customers</td>
+                    <td>Metric driven &#x2F; build what is needed</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Efficiency</em></td>
+                    <td>Reducing the cost of change (experimentation)</td>
+                    <td>Reducing cost of waste (Learning)</td>
+                    <td>Reducing cost of waste (Learning)</td>
+                    <td>Reducing cost of deviation (Volume)</td>
+                </tr>
+                <tr>
+                    <td scope="row"><em>Decision drivers</em></td>
+                    <td>Heritage &#x2F; culture</td>
+                    <td>Analysis &amp; synthesis</td>
+                    <td>Analysis &amp; synthesis</td>
+                    <td>Previous experience</td>
+                </tr>
+    </tbody>
+</table>                    </div>
+                    <div class="tab-pane fade" id="climatic-patterns" role="tabpanel" aria-labelledby="climatic-patterns-tab">...</div>
+                    <div class="tab-pane fade" id="doctrine" role="tabpanel" aria-labelledby="doctrine-tab">...</div>
+                    <div class="tab-pane fade" id="gameplay" role="tabpanel" aria-labelledby="gameplay-tab">...</div>
+                    <div class="tab-pane fade" id="glossary" role="tabpanel" aria-labelledby="glossary-tab">...</div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
