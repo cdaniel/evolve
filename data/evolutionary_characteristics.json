@@ -1,5 +1,5 @@
 [{
-  "name": "Characteristics",
+  "category_name": "Characteristics",
   "items": [{
     "name": "Ubiquity",
     "genesis": "Rare",
@@ -20,7 +20,7 @@
     "commodity(+utility)": "Focused on use"
   }]
 }, {
-  "name": "General Properties",
+  "category_name": "General Properties",
   "items": [{
     "name": "Market",
     "genesis": "Undefined market",

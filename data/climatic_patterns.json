@@ -1,5 +1,5 @@
 [{
-  "name": "Competitors",
+  "category_name": "Competitors",
   "items": [{
     "name": "Competitors actions will change the game",
     "chapter_described": "A smorgasbord of the slightly useful",
@@ -10,7 +10,7 @@
     "description": "Competitor actions are an important part of anticipation. In general however this is not something that you can directly control or even anticipate beyond aggregated effects. Fortunately in today’s climate then most competitors act as blind players in which case you do not need to dwell too much on their actions. When you make a move, they are unlikely to understand why or counter you. In the near future, given the potential interest in business algorithms, they maybe even become anticipatable blind automatons following coded secrets of success. In much the same way that Dan Mirvish noted that when Anne Hathaway was in the news, Warren Buffett’s Berkshire Hathaway’s shares went up due to suspected sentiment analysis run by robotic trading platforms. This could make the game even easier."
   }]
 }, {
-  "name": "Components",
+  "category_name": "Components",
   "items": [{
     "name": "Everything evolves through supply and demand competition",
     "chapter_described": "A smorgasbord of the slightly useful",
@@ -41,7 +41,7 @@
     "description": "All components can evolve whether activities, practices, data or knowledge but they can also co-evolve. This is commonly seen with the co-evolution of practice (how we do something) with the evolution of an activity (what we do) especially as we shift from products to more industrialised forms. What causes this is the change of characteristics of the activity. DevOps is one such example of co-evolution."
   }]
 }, {
-  "name": "Financial",
+  "category_name": "Financial",
   "items": [{
     "name": "Higher order systems create new sources of value",
     "chapter_described": "A smorgasbord of the slightly useful",
@@ -68,7 +68,7 @@
     "description": "The combination of inertia, a punctuated equilibrium, the red queen and co-evolution of practice means that as we shift across a boundary e.g. product to utility then we tend to get rapid destruction of the past (from business models to practice) along with creation of the new (industry and practices). This was described as creative destruction by Joseph Schumpeter."
   }]
 }, {
-  "name": "Inertia",
+  "category_name": "Inertia",
   "items": [{
     "name": "Success breeds inertia",
     "chapter_described": "A smorgasbord of the slightly useful",
@@ -83,7 +83,7 @@
     "description": "Contrary to popular belief, it’s not a lack of innovation that harmed companies such as Blockbuster and Kodak but instead inertia to change created by past success. Both these companies helped develop the future industries but suffered at the hands of their past business models."
   }]
 }, {
-  "name": "Prediction",
+  "category_name": "Prediction",
   "items": [{
     "name": "You cannot measure evolution over time or adoption",
     "chapter_described": "A smorgasbord of the slightly useful",
@@ -110,7 +110,7 @@
     "description": "The industrialisation of an act will tend to cause co-evolution of practice and changes to how organisations operate. If the component is significant then this can lead to a new form of organisation."
   }]
 }, {
-  "name": "Speed",
+  "category_name": "Speed",
   "items": [{
     "name": "Efficiency enables innovation",
     "chapter_described": "A smorgasbord of the slightly useful",

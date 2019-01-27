@@ -15,10 +15,11 @@ var import_evolutionary_characteristics = function(data){
     var evolutionary_characteristics = [];
     result.forEach(function(element){
 
-      index = evolutionary_characteristics.findIndex(function(subelement){ return subelement['name'] == element['category']});
+      index = evolutionary_characteristics.findIndex(function(subelement){ return subelement['category_name'] == element['category'] });
       if(index == -1){
-        index = evolutionary_characteristics.push({name: element['category'], items: []}) - 1;
+        index = evolutionary_characteristics.push({category_name: element['category'], items: []}) - 1;
       }
+      console.log(index);
       evolutionary_characteristics[index]['items'].push({
         name: element['name'],
         genesis: element['genesis'],
@@ -52,9 +53,9 @@ var import_climatic_patterns = function(data){
       // console.log(result);
       var climatic_patterns = [];
       result.forEach(function(element){
-        index = climatic_patterns.findIndex(function(subelement){ return subelement['name'] == element['category']});
+        index = climatic_patterns.findIndex(function(subelement){ return subelement['category_name'] == element['category']});
         if(index == -1){
-          index = climatic_patterns.push({name: element['category'], items: []}) - 1;
+          index = climatic_patterns.push({category_name: element['category'], items: []}) - 1;
         }
         climatic_patterns[index]['items'].push({
           name: element['name'],
