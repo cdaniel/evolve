@@ -67,6 +67,43 @@ var import_climatic_patterns = function(data){
       fs.writeFileSync('data/climatic_patterns.json', json);
 
       // // Next
+      import_doctrine(data);
+  })
+  .catch(function(err) {
+      console.log(err.message);
+      console.log(err.stack);
+  });
+}
+
+// Doctrine
+var import_doctrine = function(data){
+  console.log('doctrine called!');
+  // console.log(data);
+  gsjson({
+    spreadsheetId: '1iUjZTCCv1KsgQ5VNohtU1c3BpW7pwh7N_FDgJimjHF8',
+    worksheet: 'Doctrine'
+  })
+  .then(function(result) {
+      // console.log(result.length);
+      // console.log(result);
+      var doctrine = [];
+      result.forEach(function(element){
+        index = doctrine.findIndex(function(subelement){ return subelement['stage'] == element['stage']});
+        if(index == -1){
+          index = doctrine.push({stage: element['stage'], items: []}) - 1;
+        }
+        doctrine[index]['items'].push({
+          name: element['name'],
+          category: element['category'],
+          chapter_described: element['chapterDescribed'],
+          description: element['description']
+        });
+      });
+      data['doctrine'] = doctrine;
+      var json = beautify(JSON.stringify(doctrine), { indent_size: 2, space_in_empty_paren: true });
+      fs.writeFileSync('data/doctrine.json', json);
+
+      // // Next
       combine(data);
   })
   .catch(function(err) {

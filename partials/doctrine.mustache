@@ -1,0 +1,24 @@
+<h1>Doctrine</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col" style="min-width: 200px;">Principle</th>
+            <th scope=" col">Category</th>
+            <th scope=" col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#doctrine}}
+            <tr>
+                <th scope="row" colspan="3">Stage {{stage}}</th>
+            </tr>
+            {{#items}}
+                <tr>
+                    <td scope="row"><em>{{name}}</em></td>
+                    <td>{{category}}</td>
+                    <td>{{description}}</td>
+                </tr>
+            {{/items}}
+        {{/doctrine}}
+    </tbody>
+</table>

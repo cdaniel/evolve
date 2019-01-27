@@ -20,7 +20,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npm run beautify && npm run render",
         "beautify": "js-beautify -r --type html --file *.mustache --file partials/*.mustache && js-beautify -r --type js *.json",
-        "render": "mustache -p partials/introduction.mustache -p partials/evolutionary_characteristics.mustache -p partials/climatic_patterns.mustache data/combined.json bs4.mustache > index-bs4.html",
+        "render": "mustache -p partials/introduction.mustache -p partials/evolutionary_characteristics.mustache -p partials/climatic_patterns.mustache -p partials/doctrine.mustache data/combined.json bs4.mustache > index-bs4.html",
         "import": "node import.js",
         "watch": "npm-watch"
     },
