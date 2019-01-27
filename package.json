@@ -3,13 +3,21 @@
   "version": "0.1.0",
   "description": "A Wardley Mapping microsite.",
   "main": "index.js",
-  "dependencies": {
-    "mustache": "^3.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "mustache": "^3.0.1",
+    "npm-watch": "^0.6.0"
   },
-  "devDependencies": {},
+  "watch": {
+    "build": {
+      "patterns": ".",
+      "extensions": "json,mustache"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mustache bs4.json bs4.mustache > index-bs4.html"
+    "build": "mustache bs4.json bs4.mustache > index-bs4.html",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
