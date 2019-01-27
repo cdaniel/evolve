@@ -25,19 +25,20 @@
             </tr>
         </thead>
         <tbody>
-            {{#evolution.categories}}
+            {{#evolutionary_characteristics}}
                 <tr>
-                    <th scope="row" colspan="5">{{name}}</th>
+                    <th scope="row" colspan="5">{{category_name}}</th>
                 </tr>
                 {{#items}}
                     <tr>
                         <td scope="row"><em>{{name}}</em></td>
-                        {{#stages}}
-                            <td>{{.}}</td>
-                        {{/stages}}
+                        <td>{{genesis}}</td>
+                        <td>{{custom}}</td>
+                        <td>{{product_rental}}</td>
+                        <td>{{commodity_utility}}</td>
                     </tr>
                 {{/items}}
-            {{/evolution.categories}}
+            {{/evolutionary_characteristics}}
         </tbody>
     </table>
 

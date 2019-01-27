@@ -20,7 +20,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npm run beautify && npm run render",
         "beautify": "js-beautify -r --type html *.mustache && js-beautify -r --type js *.json",
-        "render": "mustache bs4.json bs4.mustache > index-bs4.html",
+        "render": "mustache data/combined.json bs4.mustache > index-bs4.html",
         "import": "node import.js",
         "watch": "npm-watch"
     },
