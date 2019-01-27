@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <h4 class="mt-4">Evolutionary Characteristics Cheat Sheet</h4>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Stages of Evolution</th>
+                <th scope="col">Genesis</th>
+                <th scope="col">Custom</th>
+                <th scope="col">Product (+rental)</th>
+                <th scope="col">Commodity (+utility)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#evolutionary_characteristics}}
+                <tr>
+                    <th scope="row" colspan="5">{{category_name}}</th>
+                </tr>
+                {{#items}}
+                    <tr>
+                        <td scope="row"><em>{{name}}</em></td>
+                        <td>{{genesis}}</td>
+                        <td>{{custom}}</td>
+                        <td>{{product_rental}}</td>
+                        <td>{{commodity_utility}}</td>
+                    </tr>
+                {{/items}}
+            {{/evolutionary_characteristics}}
+        </tbody>
+    </table>
+</div>
