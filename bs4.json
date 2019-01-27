@@ -1,3 +1,131 @@
 {
-    "name": "World"
+    "evolution": {
+        "categories": [{
+            "name": "Characteristics",
+            "items": [{
+                "name": "Ubiquity",
+                "stages": [
+                    "Rare",
+                    "Slowly increasing consumption",
+                    "Rapidly increasing consumption",
+                    "Widespread and stabilising"
+                ]
+            }, {
+                "name": "Certainty",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Publication Types",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }]
+        }, {
+            "name": "General Properties",
+            "items": [{
+                "name": "Market",
+                "stages": [
+                    "Undefined market",
+                    "Forming market",
+                    "Growing market",
+                    "Mature market"
+                ]
+            }, {
+                "name": "Knowledge management",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Market perception",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "User perception",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Perception in industry",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Focus of value",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Understanding",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Comparison",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Failure",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Market action",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Efficiency",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }, {
+                "name": "Decision drivers",
+                "stages": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }]
+        }]
+    }
 }

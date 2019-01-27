@@ -9,11 +9,38 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, {{ name }}!</title>
+    <title>Evolve</title>
 </head>
 
 <body>
-    <h1>Hello, {{ name }}!</h1>
+    <h1>Evolve</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Stages of Evolution</th>
+                <th scope="col">Genesis</th>
+                <th scope="col">Custom</th>
+                <th scope="col">Product (+rental)</th>
+                <th scope="col">Commodity (+utility)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#evolution.categories}}
+                <tr>
+                    <th scope="row" colspan="5">{{name}}</th>
+                </tr>
+                {{#items}}
+                    <tr>
+                        <td scope="row"><em>{{name}}</em></td>
+                        {{#stages}}
+                            <td>{{.}}</td>
+                        {{/stages}}
+                    </tr>
+                {{/items}}
+            {{/evolution.categories}}
+        </tbody>
+    </table>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
