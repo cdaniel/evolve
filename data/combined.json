@@ -717,5 +717,60 @@
       "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
       "description": "Use of common economic patterns to identify where and when to attack."
     }]
+  }],
+  "glossary": [{
+    "name": "Context",
+    "description": "Our purpose and the landscape"
+  }, {
+    "name": "Environment",
+    "description": "The context and how it is changing"
+  }, {
+    "name": "Situational awareness",
+    "description": "Our level of understanding of the environment"
+  }, {
+    "name": "Actual",
+    "description": "The map in use"
+  }, {
+    "name": "Domain",
+    "description": "Uncharted vs Transitional vs Industrialised"
+  }, {
+    "name": "Stage",
+    "description": "Of evolution e.g. Genesis, Custom, Product, Commodity"
+  }, {
+    "name": "Type",
+    "description": "Activity, Practice, Data or Knowledge"
+  }, {
+    "name": "Component",
+    "description": "A single entity in a map"
+  }, {
+    "name": "Anchor",
+    "description": "The user need"
+  }, {
+    "name": "Position",
+    "description": "Position of a component relative to the anchor in a chain of needs"
+  }, {
+    "name": "Need",
+    "description": "Something a higher level system requires"
+  }, {
+    "name": "Capability",
+    "description": "High level needs you provide to others"
+  }, {
+    "name": "Movement",
+    "description": "How evolved a component is"
+  }, {
+    "name": "Interface",
+    "description": "Connection between components"
+  }, {
+    "name": "Flow",
+    "description": "Transfer of money, risk & information between components"
+  }, {
+    "name": "Climate",
+    "description": "Rules of the game, patterns that are applied across contexts"
+  }, {
+    "name": "Doctrine",
+    "description": "Approaches which can be applied regardless of context"
+  }, {
+    "name": "Strategy",
+    "description": "A context specific approach"
   }]
 }

@@ -1,0 +1,17 @@
+<h1>Glossary</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope=" col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#glossary}}
+            <tr>
+                <td scope="row"><em>{{name}}</em></td>
+                <td>{{description}}</td>
+            </tr>
+        {{/glossary}}
+    </tbody>
+</table>

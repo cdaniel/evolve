@@ -140,7 +140,7 @@ var import_gameplay = function(data){
       fs.writeFileSync('data/gameplay.json', json);
 
       // Next
-      combine(data);
+      import_glossary(data);
   })
   .catch(function(err) {
       console.log(err.message);
@@ -148,6 +148,36 @@ var import_gameplay = function(data){
   });
 }
 
+// Glossary
+var import_glossary = function(data){
+  console.log('glossary called!');
+  // console.log(data);
+  gsjson({
+    spreadsheetId: '1iUjZTCCv1KsgQ5VNohtU1c3BpW7pwh7N_FDgJimjHF8',
+    worksheet: 'Glossary'
+  })
+  .then(function(result) {
+      // console.log(result.length);
+      // console.log(result);
+      var glossary = [];
+      result.forEach(function(element){
+        glossary.push({
+          name: element['name'],
+          description: element['description']
+        });
+      });
+      data['glossary'] = glossary;
+      var json = beautify(JSON.stringify(glossary), { indent_size: 2, space_in_empty_paren: true });
+      fs.writeFileSync('data/glossary.json', json);
+
+      // Next
+      combine(data);
+  })
+  .catch(function(err) {
+      console.log(err.message);
+      console.log(err.stack);
+  });
+}
 var combine = function(data) {
   console.log('combine called!');
   var json = beautify(JSON.stringify(data), { indent_size: 2, space_in_empty_paren: true });
