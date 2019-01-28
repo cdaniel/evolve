@@ -88,9 +88,9 @@ var import_doctrine = function(data){
       // console.log(result);
       var doctrine = [];
       result.forEach(function(element){
-        index = doctrine.findIndex(function(subelement){ return subelement['stage'] == element['stage']});
+        index = doctrine.findIndex(function(subelement){ return subelement['phase'] == element['phase']});
         if(index == -1){
-          index = doctrine.push({stage: element['stage'], items: []}) - 1;
+          index = doctrine.push({phase: element['phase'], items: []}) - 1;
         }
         doctrine[index]['items'].push({
           name: element['name'],

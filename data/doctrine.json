@@ -1,5 +1,5 @@
 [{
-  "stage": 1,
+  "phase": "Phase 1: Stop self harm",
   "items": [{
     "name": "Use a common language (necessary for collaboration)",
     "category": "Communication",
@@ -47,7 +47,7 @@
     "description": "Know the details, use small teams and break large landscapes into small contracts. Don’t be chased away by fears of complexity of management."
   }]
 }, {
-  "stage": 2,
+  "phase": "Phase 2: Become more context aware",
   "items": [{
     "name": "Be transparent (a bias towards open)",
     "category": "Communication",
@@ -125,7 +125,7 @@
     "description": "Have a bias towards distributing power from the centre including yourself. Put power in the hands of those who are closest to the choices that need to be made."
   }]
 }, {
-  "stage": 3,
+  "phase": "Phase 3: Better for less",
   "items": [{
     "name": "Be the owner (take responsibility)",
     "category": "Leading",
@@ -183,7 +183,7 @@
     "description": "Provide people with purpose (including a moral imperative and a scope) for action. Enable them to build mastery in their chosen area and give them the freedom (& autonomy) to act."
   }]
 }, {
-  "stage": 4,
+  "phase": "Phase 4: Continuously evolving",
   "items": [{
     "name": "Exploit the landscape",
     "category": "Leading",

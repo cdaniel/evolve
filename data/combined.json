@@ -228,7 +228,7 @@
     }]
   }],
   "doctrine": [{
-    "stage": 1,
+    "phase": "Phase 1: Stop self harm",
     "items": [{
       "name": "Use a common language (necessary for collaboration)",
       "category": "Communication",
@@ -276,7 +276,7 @@
       "description": "Know the details, use small teams and break large landscapes into small contracts. Don’t be chased away by fears of complexity of management."
     }]
   }, {
-    "stage": 2,
+    "phase": "Phase 2: Become more context aware",
     "items": [{
       "name": "Be transparent (a bias towards open)",
       "category": "Communication",
@@ -354,7 +354,7 @@
       "description": "Have a bias towards distributing power from the centre including yourself. Put power in the hands of those who are closest to the choices that need to be made."
     }]
   }, {
-    "stage": 3,
+    "phase": "Phase 3: Better for less",
     "items": [{
       "name": "Be the owner (take responsibility)",
       "category": "Leading",
@@ -412,7 +412,7 @@
       "description": "Provide people with purpose (including a moral imperative and a scope) for action. Enable them to build mastery in their chosen area and give them the freedom (& autonomy) to act."
     }]
   }, {
-    "stage": 4,
+    "phase": "Phase 4: Continuously evolving",
     "items": [{
       "name": "Exploit the landscape",
       "category": "Leading",
@@ -541,7 +541,8 @@
       "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
       "description": "Creating two competing bodies to become the focus of competition and in effect driving oxygen out of a market."
     }, {
-      "name": "Brand and marketing"
+      "name": "Brand and marketing",
+      "description": "To manipulate the perception of a component by association of some form of social status or to appeal to some other indirect need."
     }, {
       "name": "Bundling",
       "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
@@ -586,7 +587,8 @@
       "chapter_described": "TV Tropes",
       "description": "In any war, there are those that will benefit from the fighting and destruction that it causes."
     }, {
-      "name": "Press release process"
+      "name": "Press release process",
+      "description": "The press release to be released when a new service offering is completed must be written before development on the new offering is started. The completed new offering will be judged against the press release. This forces a company to simply take pre-existing acts and industrialise them."
     }, {
       "name": "Undermining barriers to entry",
       "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
@@ -595,9 +597,11 @@
   }, {
     "category_name": "Competitor",
     "items": [{
-      "name": "Ambush"
+      "name": "Ambush",
+      "description": "To attack with surprise e.g. when competing with another open source offering we will drop at scale any proprietary features of the component into the open source offering whenever the competitor reaches near feature parity."
     }, {
-      "name": "Circling and probing"
+      "name": "Circling and probing",
+      "description": "To test out and understand needs within a competitor's space by launching experimental offerings."
     }, {
       "name": "Fragmentation play",
       "chapter_described": "Bits or pieces?: On 61 different forms of gameplay",
