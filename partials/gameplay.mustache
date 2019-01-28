@@ -1,22 +1,20 @@
 <h1>Gameplay</h1>
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th scope="col">Context-Specific Approach</th>
-            <th scope=" col">Description</th>
-        </tr>
-    </thead>
+
+<table class="table table-bordered table-hover">
     <tbody>
-        {{#gameplay}}
-            <tr>
-                <th scope="row" colspan="2">{{category_name}}</th>
-            </tr>
+        <tr>
+            {{#gameplay}}
+        </tr>
+        <tr>
+            <td class="markable-category">
+                {{category_name}}
+            </td>
             {{#items}}
-                <tr>
-                    <td scope="row"><em>{{name}}</em></td>
-                    <td>{{description}}</td>
-                </tr>
+                <td class="rotated-markable" data-toggle="tooltip" title="{{description}}">
+                    {{name}}
+                </td>
             {{/items}}
-        {{/gameplay}}
+            {{/gameplay}}
+        </tr>
     </tbody>
 </table>
