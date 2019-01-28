@@ -45,3 +45,9 @@
 .table td.markable:hover, .table td.rotated-markable:hover {
   cursor: pointer;
 }
+
+.tooltip-inner {
+  max-width: 400px;
+  background-color: rgb(107, 99, 119);
+  font-size: 1rem;
+}
