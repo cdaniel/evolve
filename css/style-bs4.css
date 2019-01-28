@@ -33,7 +33,7 @@
   stroke: currentColor;
   fill: currentColor;
 }
-.table td.markable-category {
+.table td.category {
   background-color: rgba(86,61,124,.2);
   vertical-align: middle;
 }
