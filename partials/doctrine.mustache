@@ -14,64 +14,89 @@
 
             <p>Once you've assessed the status quo of doctrine in your organization, you can go about addressing areas of weakness. Simon suggests you do this in phases. The remainder of this page presents his best guess at the order in which you should tackle them.</p>
 
-            <p>You can <strong>select cells to highlight them</strong> as you think, discuss, and challenge assumptions. You can <strong>click multiple times to progress through colors</strong> indicating a neutral, weak, warning, and good status.</p>
-
             <p><em>Inspired by and adapted from <a href="https://twitter.com/swardley/status/993517588113186817">this tweetstorm</a> by Simon Wardley as well as <a href="https://medium.com/wardleymaps/better-for-less-58fe8c0a3aaa">Better for less</a>.</em></p>
         </div>
     </div>
 </div>
-<table class="table table-hover mt-3">
-    <thead>
-        <tr>
-            <th scope="col" style="min-width: 200px;">Principle</th>
-            <th scope=" col">Category</th>
-            <th scope=" col">Description</th>
-        </tr>
-    </thead>
+
+<p class="mt-3">You can <strong>select cells to highlight them</strong> as you think, discuss, and challenge assumptions. You can <strong>click multiple times to progress through colors</strong> indicating a weak, warning, good, and neutral (undetermined) status.</p>
+
+<h2 class="mt-3">Phase 1: Stop Self Harm</h2>
+<table class="table table-bordered table-hover">
     <tbody>
-        <tr class="table-secondary">
-            <th scope="row" colspan="2">Phase 1: Stop self harm</th>
-            <th>The focus in this first phase is simply awareness and removal of duplication. The aim is not to radically change the environment but to stop further damage being caused. Hence the emphasis is on understanding your user needs, improving situational awareness, removing duplication, challenging assumptions, getting to understand the details of what is done and introducing a systematic mechanism of learning — such as the use of maps with a group such as spend control.</th>
+        <tr>
+            {{#doctrine.1}}
         </tr>
-        {{#doctrine.1}}
-            <tr>
-                <td scope="row"><em>{{name}}</em></td>
-                <td>{{category}}</td>
-                <td>{{description}}</td>
-            </tr>
-        {{/doctrine.1}}
-        <tr class="table-secondary">
-            <th scope="row" colspan="2">Phase 2: Becoming more context aware</th>
-            <th>While phase 1 is about stopping the rot, phase 2 builds upon this by helping us to start considering and using the context. Hence the emphasis is on using appropriate tools and methods, thinking about FIRE, managing inertia, having a bias towards action, moving quickly, being transparent about what we do, distributing power and understanding that strategy is an iterative process.</th>
+        <tr>
+            <td class="markable-category">
+                {{category_name}}
+            </td>
+            {{#items}}
+                <td class="rotated-markable">
+                    {{name}}
+                </td>
+            {{/items}}
+            {{/doctrine.1}}
         </tr>
-        {{#doctrine.2}}
-            <tr>
-                <td scope="row"><em>{{name}}</em></td>
-                <td>{{category}}</td>
-                <td>{{description}}</td>
-            </tr>
-        {{/doctrine.2}}
-        <tr class="table-secondary">
-            <th scope="row" colspan="2">Phase 3: Better for less</th>
-            <th>In this phase, we’re focusing on constant improvement which means optimising flows in the system, seeking the best, a bias towards the new, thinking big, inspiring others, committing to the path, accepting uncertainty, taking responsibility and providing purpose, master & autonomy. This is the phase which is most about change and moving in a better direction whereas the previous phases are about housekeeping.</th>
+    </tbody>
+</table>
+
+<h2 class="mt-3">Phase 2: Becoming More Context Aware</h2>
+<table class="table table-bordered table-hover">
+    <tbody>
+        <tr>
+            {{#doctrine.2}}
         </tr>
-        {{#doctrine.3}}
-            <tr>
-                <td scope="row"><em>{{name}}</em></td>
-                <td>{{category}}</td>
-                <td>{{description}}</td>
-            </tr>
-        {{/doctrine.3}}
-        <tr class="table-secondary">
-            <th scope="row" colspan="2">Phase 4: Continuously evolving</th>
-            <th>The final phase is focused on creating an environment that copes with constant shocks and changes. This is the point where strategic play comes to the fore and where we design with pioneers, settlers and town planners. The emphasis is on constant evolution, use of multiple cultures, listening to outside ecosystems, understanding that everything is transient and exploiting the landscape.</th>
+        <tr>
+            <td class="markable-category">
+                {{category_name}}
+            </td>
+            {{#items}}
+                <td class="rotated-markable">
+                    {{name}}
+                </td>
+            {{/items}}
+            {{/doctrine.2}}
         </tr>
-        {{#doctrine.4}}
-            <tr>
-                <td scope="row"><em>{{name}}</em></td>
-                <td>{{category}}</td>
-                <td>{{description}}</td>
-            </tr>
-        {{/doctrine.4}}
+    </tbody>
+</table>
+
+<h2 class="mt-3">Phase 3: Better for Less</h2>
+<table class="table table-bordered table-hover">
+    <tbody>
+        <tr>
+            {{#doctrine.3}}
+        </tr>
+        <tr>
+            <td class="markable-category">
+                {{category_name}}
+            </td>
+            {{#items}}
+                <td class="rotated-markable">
+                    {{name}}
+                </td>
+            {{/items}}
+            {{/doctrine.3}}
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="mt-3">Phase 4: Continuously Evolving</h2>
+<table class="table table-bordered table-hover">
+    <tbody>
+        <tr>
+            {{#doctrine.1}}
+        </tr>
+        <tr>
+            <td class="markable-category">
+                {{category_name}}
+            </td>
+            {{#items}}
+                <td class="rotated-markable">
+                    {{name}}
+                </td>
+            {{/items}}
+            {{/doctrine.1}}
+        </tr>
     </tbody>
 </table>

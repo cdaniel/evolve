@@ -93,7 +93,11 @@ var import_doctrine = function(data){
         4: []
       };
       result.forEach(function(element){
-        doctrine[element['phase']].push({
+        index = doctrine[element['phase']].findIndex(function(subelement){ return subelement['category_name'] == element['category']});
+        if(index == -1){
+          index = doctrine[element['phase']].push({category_name: element['category'], items: []}) - 1;
+        }
+        doctrine[element['phase']][index]['items'].push({
           name: element['name'],
           category: element['category'],
           chapter_described: element['chapterDescribed'],

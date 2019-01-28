@@ -33,3 +33,15 @@
   stroke: currentColor;
   fill: currentColor;
 }
+.table td.markable-category {
+  background-color: rgba(86,61,124,.2);
+  vertical-align: middle;
+}
+
+.table td.markable, .table td.rotated-markable {
+  vertical-align: middle;
+}
+
+.table td.markable:hover, .table td.rotated-markable:hover {
+  cursor: pointer;
+}
