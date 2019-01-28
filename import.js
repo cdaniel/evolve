@@ -86,13 +86,14 @@ var import_doctrine = function(data){
   .then(function(result) {
       // console.log(result.length);
       // console.log(result);
-      var doctrine = [];
+      var doctrine = {
+        1: [],
+        2: [],
+        3: [],
+        4: []
+      };
       result.forEach(function(element){
-        index = doctrine.findIndex(function(subelement){ return subelement['phase'] == element['phase']});
-        if(index == -1){
-          index = doctrine.push({phase: element['phase'], items: []}) - 1;
-        }
-        doctrine[index]['items'].push({
+        doctrine[element['phase']].push({
           name: element['name'],
           category: element['category'],
           chapter_described: element['chapterDescribed'],

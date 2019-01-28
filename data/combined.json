@@ -227,9 +227,8 @@
       "description": "The shift across a boundary e.g. from custom to product or from product to commodity tend to visibly exhibit rapid exponential change and a shift from the past. This is known as a punctuated equilibrium."
     }]
   }],
-  "doctrine": [{
-    "phase": "Phase 1: Stop self harm",
-    "items": [{
+  "doctrine": {
+    "1": [{
       "name": "Use a common language (necessary for collaboration)",
       "category": "Communication",
       "chapter_described": "A smorgasbord of the slightly useful",
@@ -274,10 +273,8 @@
       "category": "Operations",
       "chapter_described": "A smorgasbord of the slightly useful",
       "description": "Know the details, use small teams and break large landscapes into small contracts. Don’t be chased away by fears of complexity of management."
-    }]
-  }, {
-    "phase": "Phase 2: Become more context aware",
-    "items": [{
+    }],
+    "2": [{
       "name": "Be transparent (a bias towards open)",
       "category": "Communication",
       "chapter_described": "A smorgasbord of the slightly useful",
@@ -352,10 +349,8 @@
       "category": "Structure",
       "chapter_described": "A smorgasbord of the slightly useful",
       "description": "Have a bias towards distributing power from the centre including yourself. Put power in the hands of those who are closest to the choices that need to be made."
-    }]
-  }, {
-    "phase": "Phase 3: Better for less",
-    "items": [{
+    }],
+    "3": [{
       "name": "Be the owner (take responsibility)",
       "category": "Leading",
       "chapter_described": "A smorgasbord of the slightly useful",
@@ -410,10 +405,8 @@
       "category": "Structure",
       "chapter_described": "A smorgasbord of the slightly useful",
       "description": "Provide people with purpose (including a moral imperative and a scope) for action. Enable them to build mastery in their chosen area and give them the freedom (& autonomy) to act."
-    }]
-  }, {
-    "phase": "Phase 4: Continuously evolving",
-    "items": [{
+    }],
+    "4": [{
       "name": "Exploit the landscape",
       "category": "Leading",
       "chapter_described": "A smorgasbord of the slightly useful",
@@ -439,7 +432,7 @@
       "chapter_described": "A smorgasbord of the slightly useful",
       "description": "Understand that a company which plans for longevity needs to cope with not only the discovery of uncharted components but the use of the industrialised and the transition between these two extremes. You will need different attitudes. You will therefore create many cultures in your organisation e.g. pioneers, settlers and town planners have different cultures. This is not a negative and don’t try to grind everyone into a single bland culture. It will not make them happy."
     }]
-  }],
+  },
   "gameplay": [{
     "category_name": "Accelerators",
     "items": [{
