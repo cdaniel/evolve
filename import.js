@@ -99,6 +99,7 @@ var import_doctrine = function(data){
         }
         doctrine[element['phase']][index]['items'].push({
           name: element['name'],
+          parenthetical: element['parenthetical'],
           category: element['category'],
           chapter_described: element['chapterDescribed'],
           description: element['description']
