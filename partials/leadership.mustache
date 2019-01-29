@@ -1,0 +1,22 @@
+<h1>Leadership (Gameplay)</h1>
+<p class="lead">The context-specific strategy you choose after considering your purpose, the landscape, the climate, and your capabilities.</p>
+
+<table class="table table-bordered table-hover">
+    <tbody>
+        <tr>
+            {{#gameplay}}
+        </tr>
+        <tr>
+            <td class="category">
+                {{category_name}}
+            </td>
+            {{#items}}
+                <td class="markable" data-toggle="tooltip" title="{{description}}">
+                    {{name}}
+                </td>
+            {{/items}}
+            {{/gameplay}}
+        </tr>
+    </tbody>
+</table>
+<p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s, <a target="_blank" href="https://blog.gardeviance.org/2015/05/on-61-different-forms-of-gameplay.html">On 61 Different Forms of Gameplay</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
