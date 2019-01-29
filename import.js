@@ -104,16 +104,30 @@ var import_doctrine = function(data){
       result.forEach(function(element){
         index = doctrine[element['phase']].findIndex(function(subelement){ return subelement['category_name'] == element['category']});
         if(index == -1){
-          index = doctrine[element['phase']].push({category_name: element['category'], items: []}) - 1;
+          index = doctrine[element['phase']].push({category_name: element['category'], rowspan: 1, count: 0, item_rows: {1: []}}) - 1;
         }
-        doctrine[element['phase']][index]['items'].push({
+
+        if (((doctrine[element['phase']][index]['count'] + 1) / (doctrine[element['phase']][index]['rowspan'] * 1.0)) > 4) {
+          doctrine[element['phase']][index]['rowspan']++;
+          doctrine[element['phase']][index]['item_rows'][(doctrine[element['phase']][index]['rowspan']).toString()] = [];
+        }
+
+        doctrine[element['phase']][index]['item_rows'][(doctrine[element['phase']][index]['rowspan']).toString()].push({
           name: element['name'],
           parenthetical: element['parenthetical'],
+          classes: "rotated-markable rotated-markable-neutral",
           category: element['category'],
           chapter_described: element['chapterDescribed'],
           description: element['description']
         });
+
+        doctrine[element['phase']][index]['count']++;
       });
+
+      for(var key in doctrine) {
+        doctrine[key] = fill(doctrine[key], 4);
+      }
+
       data['doctrine'] = doctrine;
       var json = beautify(JSON.stringify(doctrine), { indent_size: 2, space_in_empty_paren: true });
       fs.writeFileSync('data/doctrine.json', json);

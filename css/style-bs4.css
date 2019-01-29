@@ -38,6 +38,14 @@
   vertical-align: middle;
 }
 
+.table-rotated-markable td.category {
+  width: 12%;
+}
+
+.table-rotated-markable td.rotated-markable {
+  width: 22%;
+}
+
 .table td.markable, .table td.rotated-markable {
   vertical-align: middle;
 }
