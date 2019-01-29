@@ -7,14 +7,21 @@
             {{#climatic_patterns}}
         </tr>
         <tr>
-            <td class="category">
+            <td class="category" rowspan="{{rowspan}}">
                 {{category_name}}
             </td>
-            {{#items}}
+            {{#item_rows.1}}
                 <td data-toggle="tooltip" title="{{description}}">
                     {{name}}
                 </td>
-            {{/items}}
+            {{/item_rows.1}}
+        </tr>
+        <tr>
+            {{#item_rows.2}}
+                <td data-toggle="tooltip" title="{{description}}">
+                    {{name}}
+                </td>
+            {{/item_rows.2}}
             {{/climatic_patterns}}
         </tr>
     </tbody>
