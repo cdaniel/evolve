@@ -109,15 +109,7 @@
         "name": "Most competitors have poor situational awareness",
         "chapter_described": "A smorgasbord of the slightly useful",
         "description": "Competitor actions are an important part of anticipation. In general however this is not something that you can directly control or even anticipate beyond aggregated effects. Fortunately in today’s climate then most competitors act as blind players in which case you do not need to dwell too much on their actions. When you make a move, they are unlikely to understand why or counter you. In the near future, given the potential interest in business algorithms, they maybe even become anticipatable blind automatons following coded secrets of success. In much the same way that Dan Mirvish noted that when Anne Hathaway was in the news, Warren Buffett’s Berkshire Hathaway’s shares went up due to suspected sentiment analysis run by robotic trading platforms. This could make the game even easier."
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }]
+      }, {}, {}]
     }
   }, {
     "category_name": "Components",
@@ -153,11 +145,7 @@
         "name": "Components can co-evolve",
         "chapter_described": "A smorgasbord of the slightly useful",
         "description": "All components can evolve whether activities, practices, data or knowledge but they can also co-evolve. This is commonly seen with the co-evolution of practice (how we do something) with the evolution of an activity (what we do) especially as we shift from products to more industrialised forms. What causes this is the change of characteristics of the activity. DevOps is one such example of co-evolution."
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }]
+      }, {}]
     }
   }, {
     "category_name": "Financial",
@@ -189,15 +177,7 @@
         "name": "Creative Destruction",
         "chapter_described": "A smorgasbord of the slightly useful",
         "description": "The combination of inertia, a punctuated equilibrium, the red queen and co-evolution of practice means that as we shift across a boundary e.g. product to utility then we tend to get rapid destruction of the past (from business models to practice) along with creation of the new (industry and practices). This was described as creative destruction by Joseph Schumpeter."
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }]
+      }, {}, {}]
     }
   }, {
     "category_name": "Inertia",
@@ -216,11 +196,7 @@
         "name": "Inertia can kill an organisation",
         "chapter_described": "A smorgasbord of the slightly useful",
         "description": "Contrary to popular belief, it’s not a lack of innovation that harmed companies such as Blockbuster and Kodak but instead inertia to change created by past success. Both these companies helped develop the future industries but suffered at the hands of their past business models."
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }]
+      }, {}]
     }
   }, {
     "category_name": "Prediction",
@@ -252,15 +228,7 @@
         "name": "A “war” (point of industrialisation) causes organisations to evolve",
         "chapter_described": "A smorgasbord of the slightly useful",
         "description": "The industrialisation of an act will tend to cause co-evolution of practice and changes to how organisations operate. If the component is significant then this can lead to a new form of organisation."
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }, {
-        "name": "",
-        "chapter_described": "",
-        "description": ""
-      }]
+      }, {}, {}]
     }
   }, {
     "category_name": "Speed",

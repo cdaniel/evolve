@@ -69,43 +69,7 @@ var import_climatic_patterns = function(data){
         climatic_patterns[index]['count']++;
       });
 
-      climatic_patterns.forEach(function(element){
-        if(element['count'] % 4 > 0) {
-          var to_add = 4 - (element['count'] % 4);
-          while (to_add > 0) {
-            element['item_rows'][(element['rowspan']).toString()].push({
-              name: '',
-              chapter_described: '',
-              description: ''
-            });
-            to_add--;
-          }
-
-        }
-      });
-
-      // var positions = [];
-      // var i;
-      // for (i = 0; i < climatic_patterns.length; i++) {
-      //   if(climatic_patterns[i].items.length > 4) {
-      //     climatic_patterns[i].rowspan++;
-      //     positions.push(i);
-      //   }
-      // }
-
-      // var inserted = 0;
-      // positions.forEach(function(position){
-      //   moved_items = climatic_patterns[position + inserted]['items'].slice(4);
-      //   climatic_patterns[position + inserted]['items'] = climatic_patterns[position + inserted]['items'].slice(0, 4);
-
-      //   var empty_element = {
-      //     category_name: "",
-      //     items: moved_items
-      //   };
-      //   climatic_patterns.splice(position + inserted + 1, 0, empty_element);
-
-      //   inserted++;
-      // });
+      climatic_patterns = fill(climatic_patterns, 4);
 
       data['climatic_patterns'] = climatic_patterns;
       var json = beautify(JSON.stringify(climatic_patterns), { indent_size: 2, space_in_empty_paren: true });
@@ -234,6 +198,20 @@ var combine = function(data) {
   var json = beautify(JSON.stringify(data), { indent_size: 2, space_in_empty_paren: true });
   fs.writeFileSync('data/combined.json', json);
 }
+
+var fill = function(data, batch_size) {
+  data.forEach(function(element){
+    if(element['count'] % batch_size > 0) {
+      var to_add = batch_size - (element['count'] % batch_size);
+      while (to_add > 0) {
+        element['item_rows'][(element['rowspan']).toString()].push({});
+        to_add--;
+      }
+    }
+  });
+  return data;
+}
+
 
 var run = function() {
   import_evolutionary_characteristics({});
