@@ -46,8 +46,19 @@
   cursor: pointer;
 }
 
+.tooltip.show {
+  opacity: 0.95;
+}
+
 .tooltip-inner {
   max-width: 400px;
-  background-color: rgb(107, 99, 119);
+  background-color: #343a40;
   font-size: 1rem;
+}
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #343a40;
+}
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before{
+  border-bottom-color: #343a40;
 }
