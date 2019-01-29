@@ -1,20 +1,27 @@
 <h1>Leadership (Gameplay)</h1>
 <p class="lead">The context-specific strategy you choose after considering your purpose, the landscape, the climate, and your capabilities.</p>
 
-<table class="table table-bordered table-hover">
+<table class="table table-bordered table-hover table-fixed-width">
     <tbody>
         <tr>
             {{#gameplay}}
         </tr>
         <tr>
-            <td class="category">
+            <td class="category" rowspan={{rowspan}}>
                 {{category_name}}
             </td>
-            {{#items}}
-                <td class="markable" data-toggle="tooltip" title="{{description}}">
+            {{#item_rows.1}}
+                <td data-toggle="tooltip" title="{{description}}">
                     {{name}}
                 </td>
-            {{/items}}
+            {{/item_rows.1}}
+        </tr>
+        <tr>
+            {{#item_rows.2}}
+                <td data-toggle="tooltip" title="{{description}}">
+                    {{name}}
+                </td>
+            {{/item_rows.2}}
             {{/gameplay}}
         </tr>
     </tbody>

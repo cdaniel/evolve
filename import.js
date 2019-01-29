@@ -156,14 +156,24 @@ var import_gameplay = function(data){
       result.forEach(function(element){
         index = gameplay.findIndex(function(subelement){ return subelement['category_name'] == element['category']});
         if(index == -1){
-          index = gameplay.push({category_name: element['category'], items: []}) - 1;
+          index = gameplay.push({category_name: element['category'], rowspan: 1, count: 0, item_rows: {1: []}}) - 1;
         }
-        gameplay[index]['items'].push({
+
+
+        if (((gameplay[index]['count'] + 1) / (gameplay[index]['rowspan'] * 1.0)) > 4) {
+          gameplay[index]['rowspan']++;
+          gameplay[index]['item_rows'][(gameplay[index]['rowspan']).toString()] = [];
+        }
+        gameplay[index]['item_rows'][(gameplay[index]['rowspan']).toString()].push({
           name: element['name'],
           chapter_described: element['chapterDescribed'],
           description: element['description']
         });
+        gameplay[index]['count']++;
       });
+
+      gameplay = fill(gameplay, 4);
+
       data['gameplay'] = gameplay;
       var json = beautify(JSON.stringify(gameplay), { indent_size: 2, space_in_empty_paren: true });
       fs.writeFileSync('data/gameplay.json', json);
