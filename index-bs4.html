@@ -64,23 +64,13 @@
                     <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
 <h1>Wardley Mapping</h1>
 <p class="lead">A visual method for exploring, understanding, and communicating strategy in a world of constant change.</p>
-
-<div class="row">
-    <div class="col-4">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ezrS_LQJkvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
-<h2 class="mt-3">Making a Wardley Map</h2>
 <p>
     <ol>
-        <li>Know your users (who do you serve?)</li>
-        <li>Know their needs (why do they come to you?)</li>
-        <li>Understand the prerequisites to meeting those needs (what are the high-level activities involved?) </li>
-        <li>Create the value chain (the users, needs, and prerequisites, all connected from top to bottom in terms of dependence)</li>
-        <li>Create the map (each component of the value chain placed in a stage of evolution based on its characteristics)</li>
+        <li>Know who you serve (your users)</li>
+        <li>Know their needs</li>
+        <li>Determine the high-level activities that meet those needs</li>
+        <li>Add position (connect the users, needs, and prerequisites from top to bottom in terms of dependence)</li>
+        <li>Add movement (place each item left or right according to the best-matching stage of evolution)</li>
     </ol>
 </p>
 
@@ -120,6 +110,14 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-4">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ie2KtSU_ndQ?start=233&end=599" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
 <h2 class="mt-3">Wardley Mapping as a Thinking Process</h2>
 <p>Mapping helps with questions such as:</p>
 <p>
@@ -135,13 +133,6 @@
 </p>
 
 <p>Get started by reading <a target="_blank" href="https://bit.ly/WardleyMappingBook">Simon Wardley's free book</a>. You can find additional <a target="_blank" href="https://hiredthought.com/wardley-mapping">learning resources and tools here</a>.</p>
-<div class="row">
-    <div class="col-4">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ie2KtSU_ndQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
 
 <p><small>Wardley Mapping is licensed <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative Commons Attribution-ShareAlike 4.0</a>, courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>.</small></p>                    </div>
                     <div class="tab-pane fade" id="evolution" role="tabpanel" aria-labelledby="evolution-tab">
@@ -1161,6 +1152,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            var hash = window.location.hash;
+            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+            $('.nav-item a').click(function(e) {
+                $(this).tab('show');
+                var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+                window.location.hash = this.hash;
+                $('html,body').scrollTop(scrollmem);
+            });
+        });
+    </script>
 
     <script>
         window.onload = function() {
