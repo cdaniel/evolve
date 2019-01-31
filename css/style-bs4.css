@@ -54,21 +54,21 @@
   cursor: pointer;
 }
 
-.table td.rotated-markable-neutral:before {
-  content: "❔";
-  margin-right: 6px;
+.table td.rotated-markable-neutral:after {
+  content: "ℹ️"; 
+  margin-left: 6px;
 }
-.table td.rotated-markable-danger:before {
+.table td.rotated-markable-danger:after {
   content: "❗️";
-  margin-right: 6px;
+  margin-left: 6px;
 }
-.table td.rotated-markable-warning:before {
+.table td.rotated-markable-warning:after {
   content: "⚠";
-  margin-right: 6px;
+  margin-left: 6px;
 }
-.table td.rotated-markable-success:before {
+.table td.rotated-markable-success:after {
   content: "✅";
-  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .table td.rotated-markable-danger {
