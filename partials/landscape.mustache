@@ -3,17 +3,17 @@
 
 <p>To map your landscape:
     <ol>
-        <li>Know your users (who you serve)</li>
-        <li>Know their needs</li>
-        <li>Know the prerequisite activities to meet those needs</li>
-        <li>Add position (connect users, needs, and prerequisites from top to bottom according to dependence)</li>
-        <li>Add movement (place needs and prerequisites left to right according to <a href="#determining-movement">evolutionary stage</a>)</li>
+	<li>Know your users (who you serve)</li>
+	<li>Know their needs</li>
+	<li>Know the prerequisite activities to meet those needs</li>
+	<li>Add position (connect users, needs, and prerequisites from top to bottom according to dependence)</li>
+	<li>Add movement (place needs and prerequisites left to right according to <a href="#determining-movement">evolutionary stage</a>)</li>
     </ol>
 </p>
 <div class="row">
     <div class="col-12 col-xl-8">
-        <img class="img-fluid" src="images/map-breakdown.jpg">
-        <p class="text-center"><small>Image courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, color annotations by Hired Thought, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+	<img class="img-fluid" src="images/map-breakdown.jpg">
+	<p class="text-center"><small>Image courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, color annotations by Hired Thought, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
     </div>
 </div>
 
@@ -22,49 +22,49 @@
 
 <table class="table table-hover mt-3">
     <thead>
-        <tr>
-            <th scope="col">Stages of Evolution</th>
-            <th scope="col">
-                <h3 class="text-danger">Genesis</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-warning">Custom</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-success">Product<br />(+rental)</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-info">Commodity<br />(+utility)</h3>
-            </th>
-        </tr>
+	<tr>
+	    <th scope="col">Stages of Evolution</th>
+	    <th scope="col">
+		<h3 class="text-danger">Genesis</h3>
+	    </th>
+	    <th scope="col">
+		<h3 class="text-warning">Custom</h3>
+	    </th>
+	    <th scope="col">
+		<h3 class="text-success">Product<br />(+rental)</h3>
+	    </th>
+	    <th scope="col">
+		<h3 class="text-info">Commodity<br />(+utility)</h3>
+	    </th>
+	</tr>
     </thead>
     <tbody>
-        <tr>
-            <td scope="row" colspan="1"></td>
-            <td colspan="4">
-                <svg class="arrow-right">
-                    <use href="#arrow-right"></use>
-                </svg>
-            </td>
-        </tr>
-        {{#evolutionary_characteristics}}
-            <tr>
-                <td class="category" scope="row"><strong>{{category_name}}</strong></td>
-                <td colspan="5"></td>
-            </tr>
-            {{#items}}
-                <tr>
-                    <td class="category" scope="row"><em>{{name}}</em></td>
-                    <td class="markable">{{genesis}}</td>
-                    <td class="markable">{{custom}}</td>
-                    <td class="markable">{{product_rental}}</td>
-                    <td class="markable">{{commodity_utility}}</td>
-                </tr>
-            {{/items}}
-        {{/evolutionary_characteristics}}
+	<tr>
+	    <td scope="row" colspan="1"></td>
+	    <td colspan="4">
+		<svg class="arrow-right">
+		    <use href="#arrow-right"></use>
+		</svg>
+	    </td>
+	</tr>
+	{{#evolutionary_characteristics}}
+	    <tr>
+		<td class="category" scope="row"><strong>{{category_name}}</strong></td>
+		<td colspan="5"></td>
+	    </tr>
+	    {{#items}}
+		<tr>
+		    <td class="category" scope="row"><em>{{name}}</em></td>
+		    <td class="markable">{{genesis}}</td>
+		    <td class="markable">{{custom}}</td>
+		    <td class="markable">{{product_rental}}</td>
+		    <td class="markable">{{commodity_utility}}</td>
+		</tr>
+	    {{/items}}
+	{{/evolutionary_characteristics}}
     </tbody>
 </table>
-<p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s, <a target="_blank" href="https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html">Evolutionary Characteristics Cheat Sheet</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+<p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s <a target="_blank" href="https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html">Evolutionary Characteristics Cheat Sheet</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
 
 <blockquote class="mt-3 blockquote">
     <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
