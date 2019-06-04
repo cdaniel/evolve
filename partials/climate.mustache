@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="col-12 col-md-12 col-xl-8">
-        <h2>Pattern 1: Everything Evolves</h2>
+        <h2>Pattern 1: Everything Evolves Through Supply and Demand Competition</h2>
         <p>If the conditions exist that a person or groups of people will strive to gain some form of advantage or control over others due to a constraint (i.e. a limitation of a resource or time or money or people) then we have competition.</p>
         <p>If competition exists then the components effected will evolve until they become industrialised. This impacts everything from activities (what we do), practices (how we do something), data (how we measure something) to knowledge (how we understand something).</p>
         <table class="table">
@@ -144,31 +144,37 @@
     </div>
 </div>
 
-<table class="table table-bordered table-hover table-fixed-width">
-    <tbody>
-        <tr>
-            {{#climatic_patterns}}
-        </tr>
-        <tr>
-            <td class="category" rowspan="{{rowspan}}">
-                {{category_name}}
-            </td>
-            {{#item_rows.1}}
-                <td data-toggle="tooltip" title="{{description}}">
-                    {{name}}
-                </td>
-            {{/item_rows.1}}
-        </tr>
-        <tr>
-            {{#item_rows.2}}
-                <td data-toggle="tooltip" title="{{description}}">
-                    {{name}}
-                </td>
-            {{/item_rows.2}}
-            {{/climatic_patterns}}
-        </tr>
-    </tbody>
-</table>
-<p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s, <a target="_blank" href="https://twitter.com/swardley/status/887066510098919424">Climatic Patterns</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+<div class="row">
+    <div class="col-12 col-md-12 col-xl-8">
+        <h1>Table of Climatic Patterns</h1>
+        <p>Below are Climatic Patterns that can be studied and integrated into strategic thinking about Competition, Components (Capabilities), Finances, Inertia, Prediction, and Speed. Mouse over each cell for more detailed descriptions.</p>
+        <table class="table table-bordered table-hover table-fixed-width">
+            <tbody>
+                <tr>
+                    {{#climatic_patterns}}
+                </tr>
+                <tr>
+                    <td class="category" rowspan="{{rowspan}}">
+                        {{category_name}}
+                    </td>
+                    {{#item_rows.1}}
+                        <td data-toggle="tooltip" title="{{description}}">
+                            {{name}}
+                        </td>
+                    {{/item_rows.1}}
+                </tr>
+                <tr>
+                    {{#item_rows.2}}
+                        <td data-toggle="tooltip" title="{{description}}">
+                            {{name}}
+                        </td>
+                    {{/item_rows.2}}
+                    {{/climatic_patterns}}
+                </tr>
+            </tbody>
+        </table>
+        <p class="text-center"><small>Courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
 
 <p><a class="btn btn-secondary btn-lg" href="#" onclick="$('#doctrine-tab').click()" role="button">Next &raquo;</a></p>
