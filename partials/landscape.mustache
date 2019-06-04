@@ -177,58 +177,61 @@
         </table>
     </div>
 </div>
-<h2 class="mt-5" id="determining-movement">Evolutionary Characteristics Cheat Sheet</h2>
-<p class="lead">An interactive list of <strong>characteristics</strong> to help you determine how evolved something is (select cells to highlight).</p>
+<div class="row">
+    <div class="col-12 col-md-12 col-xl-8">
+        <h2 class="mt-5" id="determining-movement">Evolutionary Characteristics Cheat Sheet</h2>
+        <p class="lead">An interactive list of <strong>characteristics</strong> to help you determine how evolved something is (select cells to highlight).</p>
 
-<blockquote class="blockquote">
-    <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
-    <footer class="blockquote-footer">Simon Wardley in <cite title="Finding a Path"><a href="https://medium.com/wardleymaps/finding-a-path-cdb1249078c0" target="_blank">Finding a Path</a></cite></footer>
-</blockquote>
-
-<table class="table table-hover mt-3">
-    <thead>
-        <tr>
-            <th scope="col">Stage of Evolution</th>
-            <th scope="col">
-                <h3 class="text-danger">I</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-warning">II</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-success">III</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-info">IV</h3>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td scope="row" colspan="1"></td>
-            <td colspan="4">
-                <svg class="arrow-right">
-                    <use href="#arrow-right"></use>
-                </svg>
-            </td>
-        </tr>
-        {{#evolutionary_characteristics}}
-            <tr>
-                <td class="category" scope="row"><strong>{{category_name}}</strong></td>
-                <td colspan="5"></td>
-            </tr>
-            {{#items}}
+        <blockquote class="blockquote">
+            <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
+            <footer class="blockquote-footer">Simon Wardley in <cite title="Finding a Path"><a href="https://medium.com/wardleymaps/finding-a-path-cdb1249078c0" target="_blank">Finding a Path</a></cite></footer>
+        </blockquote>
+        <table class="table table-hover mt-3">
+            <thead>
                 <tr>
-                    <td class="category" scope="row"><em>{{name}}</em></td>
-                    <td class="markable">{{genesis}}</td>
-                    <td class="markable">{{custom}}</td>
-                    <td class="markable">{{product_rental}}</td>
-                    <td class="markable">{{commodity_utility}}</td>
+                    <th scope="col">Stage of Evolution</th>
+                    <th scope="col">
+                        <h4 class="text-danger">I</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-warning">II</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-success">III</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-info">IV</h4>
+                    </th>
                 </tr>
-            {{/items}}
-        {{/evolutionary_characteristics}}
-    </tbody>
-</table>
-<p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s <a target="_blank" href="https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html">Evolutionary Characteristics Cheat Sheet</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" colspan="1"></td>
+                    <td colspan="4">
+                        <svg class="arrow-right">
+                            <use href="#arrow-right"></use>
+                        </svg>
+                    </td>
+                </tr>
+                {{#evolutionary_characteristics}}
+                    <tr>
+                        <td class="category" scope="row"><strong>{{category_name}}</strong></td>
+                        <td colspan="5"></td>
+                    </tr>
+                    {{#items}}
+                        <tr>
+                            <td class="category" scope="row"><em>{{name}}</em></td>
+                            <td class="markable">{{genesis}}</td>
+                            <td class="markable">{{custom}}</td>
+                            <td class="markable">{{product_rental}}</td>
+                            <td class="markable">{{commodity_utility}}</td>
+                        </tr>
+                    {{/items}}
+                {{/evolutionary_characteristics}}
+            </tbody>
+        </table>
+        <p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s <a target="_blank" href="https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html">Evolutionary Characteristics Cheat Sheet</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
 
 <p><a class="btn btn-secondary btn-lg" href="#" onclick="$('#climate-tab').click()" role="button">Next &raquo;</a></p>
