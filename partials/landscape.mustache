@@ -1,167 +1,234 @@
-<h1>Landscape</h1>
-<p class="lead">A description of your competitive environment, including its features, your position, and any obstacles in the way.</p>
-
-<p>To map your landscape:
-    <ol>
-        <li>Know your users (who you serve)</li>
-        <li>Know their needs</li>
-        <li>Know the prerequisite activities to meet those needs</li>
-        <li>Add position (connect users, needs, and prerequisites from top to bottom according to dependence)</li>
-        <li>Add movement (place needs and prerequisites left to right according to <a href="#determining-movement">evolutionary stage</a>)</li>
-    </ol>
-</p>
 <div class="row">
-    <div class="col-12 col-xl-8">
-        <img class="img-fluid" src="images/map-breakdown.jpg">
-        <p class="text-center"><small>Image courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, color annotations by Hired Thought, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    <div class="col-12 col-md-8 col-xl-6">
+        <h1>Landscape</h1>
+        <p>A map of physical terrain is visual, specific to the battle at hand, and includes the position of troops and obstacles relative to an anchor (magnetic North).</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <img class="img-fluid border" src="images/terrain_map.jpg">
+        <p class="text-center"><small> Twelfth Army Group situation map, 1944. Retrieved from the <a target="_blank" href="www.loc.gov/item/2004629075">Library of Congress</a>.</small></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <p>A map of a competitive business <strong>Landscape</strong> (a Wardley Map) is also visual and context-specific, but instead of magnetic North, the anchor is the User being served and their corresponding needs. And instead of troops, the map contains a value chain — capabilities necessary to fulfill the needs, arranged according to their dependency relationships.</p>
+
+        <p>The position of the capabilities on a Wardley Map is dependent on two aspects:
+            <ol>
+                <li>Visibility to the user, which is a natural outcome of a component's relative position within the value chain, manually adjusted as needed.</li>
+                <li>Evolutionary stage, as determined through evaluation of the component's general properties and characteristics.</li>
+            </ol>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <img class="img-fluid border" src="images/intro-4.png">
+        <p class="text-center"><small>Courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
     </div>
 </div>
 
-<h2 class="mt-3" id="determining-movement">Determining Movement</h2>
-<p class="lead">The <strong>movement</strong> of a component along the X axis is determined by its stage of evolution.</p>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <h1>Making a Map</h1>
+        <p>Wardley Mapping is a straight-forward process, and most difficulties boil down to concerns about making "mistakes" or doing the "wrong" thing. It is much more valuable to discard these concerns up-front, embrace the messiness of the process, and learn by boldly doing.</p>
+        <p>The process of mapping is also the process of constructing a model of reality. An incorrect model that is also useful is the definition of success.</p>
+        <p>To make a map:
+            <ol>
+                <li>Identify the <strong>Users</strong> being served</li>
+                <li>Identify the <strong>Needs</strong> to be met (think of these as top-level Capabilities)</li>
+                <li>Identify the <strong>Capabilities</strong> needed to successfully meet those needs</li>
+                <li>Determine the stage of <strong>Evolution</strong> for each Capability by evaluating its characteristics (if it's difficult to decide, try breaking the Capability down into multiple, smaller Capabilities)</li>
+                <li>Draw the complete value chain — User at the top, Needs and Capabilities underneath, with dependency relationships included and Capabilities placed in Stages I, II, III, or IV of Evolution</li>
+            </ol>
+        </p>
+        <p>The process can also look something like this...</p>
+    </div>
+</div>
 
-<table class="table table-hover mt-3">
-    <thead>
-        <tr>
-            <th scope="col">Stage of Evolution</th>
-            <th scope="col">
-                <h3 class="text-danger">I</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-warning">II</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-success">III</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-info">IV</h3>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td scope="row" colspan="1"></td>
-            <td colspan="4">
-                <svg class="arrow-right">
-                    <use href="#arrow-right"></use>
-                </svg>
-            </td>
-        </tr>
-        <tr>
-            <td scope="col">Activities</td>
-            <td scope="col">
-                <h3 class="text-danger">Genesis</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-warning">Custom</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-success">Product<br />(+rental)</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-info">Commodity<br />(+utility)</h3>
-            </td>
-        </tr>
-        <tr>
-            <td scope="col">Practices</td>
-            <td scope="col">
-                <h3 class="text-danger">Novel</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-warning">Emerging</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-success">Good</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-info">Best</h3>
-            </td>
-        </tr>
-        <tr>
-            <td scope="col">Data</td>
-            <td scope="col">
-                <h3 class="text-danger">Unmodelled</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-warning">Divergent</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-success">Convergent</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-info">Modelled</h3>
-            </td>
-        </tr>
-        <tr>
-            <td scope="col">Knowledge</td>
-            <td scope="col">
-                <h3 class="text-danger">Concept</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-warning">Hypothesis</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-success">Theory</h3>
-            </td>
-            <td scope="col">
-                <h3 class="text-info">Accepted</h3>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <h2>1. Users and Needs</h2>
+        <img class="img-fluid border" src="images/intro-1.png">
+        <p class="text-center"><small>Courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
 
-<blockquote class="mt-5 blockquote">
-    <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
-    <footer class="blockquote-footer">Simon Wardley in <cite title="Finding a Path"><a href="https://medium.com/wardleymaps/finding-a-path-cdb1249078c0" target="_blank">Finding a Path</a></cite></footer>
-</blockquote>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <h2>2. Capabilities</h2>
+        <img class="img-fluid border" src="images/intro-2.png">
+        <p class="text-center"><small>Courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
 
-<h2 class="mt-5" id="determining-movement">Evolutionary Characteristics Cheat Sheet</h2>
-<p class="lead">An interactive list of <strong>characteristics</strong> to help you determine how evolved something is (select cells to highlight).</p>
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <h2>3. Value Chain</h2>
+        <img class="img-fluid border" src="images/intro-3.png">
+        <p class="text-center"><small>Courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
 
-<table class="table table-hover mt-3">
-    <thead>
-        <tr>
-            <th scope="col">Stage of Evolution</th>
-            <th scope="col">
-                <h3 class="text-danger">I</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-warning">II</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-success">III</h3>
-            </th>
-            <th scope="col">
-                <h3 class="text-info">IV</h3>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td scope="row" colspan="1"></td>
-            <td colspan="4">
-                <svg class="arrow-right">
-                    <use href="#arrow-right"></use>
-                </svg>
-            </td>
-        </tr>
-        {{#evolutionary_characteristics}}
-            <tr>
-                <td class="category" scope="row"><strong>{{category_name}}</strong></td>
-                <td colspan="5"></td>
-            </tr>
-            {{#items}}
+<div class="row">
+    <div class="col-12 col-md-8 col-xl-6">
+        <h2>4. Wardley Map</h2>
+        <img class="img-fluid border" src="images/intro-4.png">
+        <p class="text-center"><small>Courtesy of <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-12 col-xl-8">
+        <h2 class="mt-3" id="capability-types">Capability Types</h2>
+        <p>Capabilities can be Activities (what we do), Practices (how we do it), Data (how we measure it), or Knowledge (how we understand it). Their manifestations in the different stages are shown below.</p>
+        <table class="table table-hover">
+            <thead>
                 <tr>
-                    <td class="category" scope="row"><em>{{name}}</em></td>
-                    <td class="markable">{{genesis}}</td>
-                    <td class="markable">{{custom}}</td>
-                    <td class="markable">{{product_rental}}</td>
-                    <td class="markable">{{commodity_utility}}</td>
+                    <th scope="col">Stage of Evolution</th>
+                    <th scope="col">
+                        <h4 class="text-danger">I</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-warning">II</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-success">III</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-info">IV</h4>
+                    </th>
                 </tr>
-            {{/items}}
-        {{/evolutionary_characteristics}}
-    </tbody>
-</table>
-<p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s <a target="_blank" href="https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html">Evolutionary Characteristics Cheat Sheet</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" colspan="1"></td>
+                    <td colspan="4">
+                        <svg class="arrow-right">
+                            <use href="#arrow-right"></use>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="col">Activities</td>
+                    <td scope="col">
+                        <h4 class="text-danger">Genesis</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-warning">Custom</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-success">Product<br />(+rental)</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-info">Commodity<br />(+utility)</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="col">Practices</td>
+                    <td scope="col">
+                        <h4 class="text-danger">Novel</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-warning">Emerging</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-success">Good</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-info">Best</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="col">Data</td>
+                    <td scope="col">
+                        <h4 class="text-danger">Unmodelled</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-warning">Divergent</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-success">Convergent</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-info">Modelled</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="col">Knowledge</td>
+                    <td scope="col">
+                        <h4 class="text-danger">Concept</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-warning">Hypothesis</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-success">Theory</h4>
+                    </td>
+                    <td scope="col">
+                        <h4 class="text-info">Accepted</h4>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-12 col-xl-8">
+        <h2 class="mt-5" id="determining-movement">Evolutionary Characteristics Cheat Sheet</h2>
+        <p>The list of characteristics below may help as you determine how evolved something is. If you like, you can click cells to highlight them as you think.</p>
+
+        <blockquote class="blockquote">
+            <p class="mb-0">Don’t worry if some of the terms are confusing... just use what you can. Like Chess, mapping is a craft and you will get better with practice.</p>
+            <footer class="blockquote-footer">Simon Wardley in <cite title="Finding a Path"><a href="https://medium.com/wardleymaps/finding-a-path-cdb1249078c0" target="_blank">Finding a Path</a></cite></footer>
+        </blockquote>
+        <table class="table table-hover mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Stage of Evolution</th>
+                    <th scope="col">
+                        <h4 class="text-danger">I</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-warning">II</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-success">III</h4>
+                    </th>
+                    <th scope="col">
+                        <h4 class="text-info">IV</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" colspan="1"></td>
+                    <td colspan="4">
+                        <svg class="arrow-right">
+                            <use href="#arrow-right"></use>
+                        </svg>
+                    </td>
+                </tr>
+                {{#evolutionary_characteristics}}
+                    <tr>
+                        <td class="category" scope="row"><strong>{{category_name}}</strong></td>
+                        <td colspan="5"></td>
+                    </tr>
+                    {{#items}}
+                        <tr>
+                            <td class="category" scope="row"><em>{{name}}</em></td>
+                            <td class="markable">{{genesis}}</td>
+                            <td class="markable">{{custom}}</td>
+                            <td class="markable">{{product_rental}}</td>
+                            <td class="markable">{{commodity_utility}}</td>
+                        </tr>
+                    {{/items}}
+                {{/evolutionary_characteristics}}
+            </tbody>
+        </table>
+        <p class="text-center"><small>Based on <a target="_blank" href="https://twitter.com/swardley">Simon Wardley</a>'s <a target="_blank" href="https://blog.gardeviance.org/2016/04/whats-in-wardley-map-and-need-for-cheat.html">Evolutionary Characteristics Cheat Sheet</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>.</small></p>
+    </div>
+</div>
 
 <p><a class="btn btn-secondary btn-lg" href="#" onclick="$('#climate-tab').click()" role="button">Next &raquo;</a></p>
